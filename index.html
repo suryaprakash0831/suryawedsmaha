@@ -1,0 +1,1708 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Mahalakshmi &amp; Surya Prakash — Shubha Vivaha</title>
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+<meta name="theme-color" content="#5E0F20">
+<meta name="apple-mobile-web-app-title" content="Mahalakshmi &amp; Surya Prakash">
+
+<!-- ===================== METADATA =====================
+     og:image must be an absolute URL — WhatsApp, iMessage, Facebook and X
+     cannot read a data: URI, so og.jpg has to sit next to this file on the
+     server. Bump ?v=1 to ?v=2 if you ever change the card; the crawlers
+     cache previews hard and the query string is what forces a re-fetch.
+     ==================================================== -->
+<meta name="description" content="Shubha Vivaha — Mahalakshmi weds Surya Prakash on Sunday, 11 November 2026, muhurtham at 9:50 AM, Maha Ganapathi Temple.">
+<meta name="author" content="Mahalakshmi &amp; Surya Prakash">
+<link rel="canonical" href="https://priyawedsram.com/">
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mahalakshmi weds Surya Prakash">
+<meta property="og:locale" content="en_IN">
+<meta property="og:url" content="https://priyawedsram.com/">
+<meta property="og:title" content="Mahalakshmi weds Surya Prakash">
+<meta property="og:description" content="November 11, 2026 · Muhurtham at Maha Ganapathi Temple. Together with our families, we invite you to share in our joy.">
+<meta property="og:image" content="https://priyawedsram.com/og.jpg?v=1">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sri Ganesha above the names Mahalakshmi weds Surya Prakash, with the wedding date of 11 November 2026.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mahalakshmi weds Surya Prakash">
+<meta name="twitter:description" content="November 11, 2026 · Muhurtham at Maha Ganapathi Temple.">
+<meta name="twitter:image" content="https://priyawedsram.com/og.jpg?v=1">
+<meta name="twitter:image:alt" content="Sri Ganesha above the names Mahalakshmi weds Surya Prakash.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Cinzel:wght@400;500;600&amp;family=Tiro+Devanagari+Sanskrit&amp;display=swap" rel="stylesheet">
+<link rel="preload" as="image" type="image/webp" href="images/ganesha.webp">
+<link rel="preload" as="image" type="image/webp" href="images/gopuram.webp" media="(min-width:681px)">
+<link rel="preload" as="image" type="image/webp" href="images/gopuram-mobile.webp" media="(max-width:680px)">
+<link rel="preload" as="image" type="image/webp" href="images/kalash.webp">
+<style>
+  :root{
+    --maroon:#5E0F20; --maroon-deep:#3A0712; --maroon-soft:#78192F;
+    --gold:#CBA135; --gold-lt:#EBC968; --gold-deep:#9C761D;
+    --coral:#C25A3C; --teal:#1E6F68;
+    --cream:#F5EAD2; --cream-2:#FBF4E3; --panel:#FCF6E8;
+    --ink:#42281A; --ink-soft:#7A5A40;
+    --serif:'Cormorant Garamond','Cormorant',Georgia,serif;
+    --body:'EB Garamond',Georgia,serif;
+    --caps:'Cinzel','Cormorant Garamond',serif;
+    --deva:'Tiro Devanagari Sanskrit','Cormorant Garamond',serif;
+  }
+  /* ================= MUSIC TOGGLE =================
+     Browsers refuse to start audio without a real user gesture, so the clip is armed
+     on the guest's first tap and this button stays as the manual control. It sits
+     above every layer of the reveal and outside .content, whose opacity the
+     animation drives, so it's reachable from the first frame to the last. */
+  .music-btn{
+    position:fixed; z-index:60;
+    right:calc(15px + env(safe-area-inset-right,0px));
+    bottom:calc(15px + env(safe-area-inset-bottom,0px));
+    width:44px; height:44px; border-radius:50%;
+    display:grid; place-items:center; cursor:pointer;
+    background:rgba(252,246,232,.86); color:var(--maroon);
+    border:1px solid rgba(203,161,53,.7);
+    box-shadow:0 4px 16px rgba(94,15,32,.20);
+    -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px);
+    -webkit-tap-highlight-color:transparent;
+    transition:transform .18s ease, background .25s ease, box-shadow .25s ease;
+  }
+  .music-btn:hover{transform:scale(1.06); background:rgba(252,246,232,.96)}
+  .music-btn:active{transform:scale(.93)}
+  .music-btn:focus-visible{outline:2px solid var(--gold-deep); outline-offset:3px}
+  .music-btn svg{width:21px; height:21px; fill:none; stroke:currentColor;
+    stroke-width:1.7; stroke-linecap:round; stroke-linejoin:round; overflow:visible}
+  .music-btn .wave{transition:opacity .2s ease}
+  .music-btn .slash{opacity:0; transition:opacity .2s ease}
+  .music-btn[aria-pressed="false"] .wave{opacity:0}
+  .music-btn[aria-pressed="false"] .slash{opacity:1}
+  /* one soft ring, only until the guest has decided about sound */
+  /* Autoplay is refused until a guest interacts, so the off state needs to read as an
+     invitation rather than as a broken control. */
+  .music-cue{
+    position:fixed; z-index:60; pointer-events:none;
+    right:calc(69px + env(safe-area-inset-right,0px));
+    bottom:calc(26px + env(safe-area-inset-bottom,0px));
+    font-family:var(--caps); text-transform:uppercase; letter-spacing:.18em;
+    font-size:10px; color:var(--maroon); white-space:nowrap;
+    padding:5px 10px; border-radius:999px;
+    background:rgba(252,246,232,.86); border:1px solid rgba(203,161,53,.55);
+    box-shadow:0 3px 10px rgba(94,15,32,.14);
+    -webkit-backdrop-filter:blur(6px); backdrop-filter:blur(6px);
+    transition:opacity .5s ease, transform .5s ease;
+  }
+  .music-cue.gone{opacity:0; transform:translateX(6px)}
+  .music-btn.hint::after{content:""; position:absolute; inset:-1px; border-radius:50%;
+    border:1px solid rgba(203,161,53,.8); animation:mpulse 2.6s ease-out infinite; pointer-events:none}
+  @keyframes mpulse{0%{transform:scale(1);opacity:.8} 70%{transform:scale(1.45);opacity:0} 100%{opacity:0}}
+  @media (prefers-reduced-motion: reduce){ .music-btn.hint::after{animation:none} }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%; background:var(--cream)}
+  body{
+    font-family:var(--body); color:var(--ink);
+    background:var(--cream);
+    overflow-x:hidden;
+    line-height:1.6;
+  }
+  img{display:block;user-select:none;-webkit-user-drag:none}
+  a{color:inherit}
+
+  /* ================= LOADING SHELL =================
+     This is real content, not a blank blocker: it covers the cinematic stage only
+     until the critical art is ready, errors, or takes too long. The timeout path
+     falls back to the reduced/static layout so guests are never stuck waiting for
+     one slow asset. */
+  .load-shell{
+    position:fixed; inset:0; z-index:100;
+    display:grid; place-items:center; text-align:center;
+    padding:calc(28px + env(safe-area-inset-top,0px)) 7vw calc(28px + env(safe-area-inset-bottom,0px));
+    background:
+      radial-gradient(64% 42% at 50% 72%, rgba(235,201,104,.24), transparent 70%),
+      linear-gradient(180deg, #F8EFD9 0%, #F5EAD2 54%, #EFDCAE 100%);
+    color:var(--maroon);
+    transition:opacity .42s ease, visibility .42s ease;
+  }
+  .load-shell[hidden]{display:none}
+  body.ready .load-shell{opacity:0; visibility:hidden; pointer-events:none}
+  .load-shell__mark{
+    width:clamp(54px,12vw,82px); margin:0 auto .75rem;
+    filter:drop-shadow(0 6px 12px rgba(94,15,32,.16));
+  }
+  .load-shell__mark img{width:100%; height:auto}
+  .load-shell__title{
+    font-family:var(--serif); font-weight:500; line-height:1;
+    font-size:clamp(34px,10vw,68px); letter-spacing:.01em;
+  }
+  .load-shell__sub{
+    margin-top:.75rem; font-family:var(--caps); text-transform:uppercase;
+    letter-spacing:.24em; padding-left:.24em;
+    font-size:clamp(10px,2.8vw,13px); color:var(--gold-deep);
+  }
+  .load-shell__msg{
+    min-height:1.5em; margin-top:1.2rem;
+    font-family:var(--body); font-size:clamp(15px,3.8vw,18px);
+    color:var(--ink-soft);
+  }
+  .load-shell__bar{
+    position:relative; overflow:hidden; width:min(220px,58vw); height:2px;
+    margin:1.15rem auto 0; background:rgba(156,118,29,.22);
+  }
+  .load-shell__bar::after{
+    content:""; position:absolute; inset:0; width:45%;
+    background:linear-gradient(90deg, transparent, var(--gold), transparent);
+    animation:loadSweep 1.5s ease-in-out infinite;
+  }
+  @keyframes loadSweep{
+    from{transform:translateX(-110%)}
+    to{transform:translateX(260%)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .load-shell,.load-shell__bar::after{transition:none; animation:none}
+  }
+
+  /* ================= WATERMARK (temple behind content) =================
+     Always at opacity:1 so the temple is at a constant .06 effective opacity
+     throughout the page. It's at z-0 (behind everything), so during the reveal
+     it's hidden by the sticky stage automatically; once the stage releases,
+     the transparent content section reveals the same temple underneath. */
+  .watermark{
+    position:fixed; inset:0; z-index:0; pointer-events:none;
+    display:flex; align-items:center; justify-content:center;
+    opacity:1;
+  }
+  .watermark img{
+    width:min(120vh,900px); max-width:150%;
+    opacity:.06; filter:sepia(.5) saturate(.7);
+  }
+
+  /* ================= STAGE : the cinematic reveal =================
+     Wrap total height = (animation scroll) + (100vh stage). At 320vh we get
+     ~220vh for the animation and 100vh for the sticky-release. The 100vh is a
+     floor, not a choice: the stage is a full viewport tall and has to scroll
+     off before the invocation shows. */
+  .reveal-wrap{position:relative; height:320vh; z-index:2; overflow-anchor:none}
+  .stage{
+    /* Sized to the LARGEST viewport on purpose. svh is the height with the browser's
+       bottom bar showing; the moment that bar retracts on scroll the viewport grows and
+       an svh-tall stage no longer reaches the bottom of the screen — that was the blank
+       strip. lvh always covers it, and unlike dvh it doesn't resize mid-scroll, so the
+       animation's geometry stays stable while the bar slides in and out. */
+    position:sticky; top:0; height:100vh; height:100lvh; overflow:hidden;
+    background:linear-gradient(180deg,
+      #9DBFDB 0%, #B6D0E3 16%, #D3E1E4 38%, #ECE6D2 62%, #F3DBAC 84%, #EFCE96 100%);
+  }
+  /* warm horizon glow low behind the temple */
+  .stage::after{
+    content:""; position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(52% 42% at 50% 90%, rgba(255,240,198,.6), transparent 72%);
+  }
+  /* drifting clouds in the upper sky, behind the temple */
+  .clouds{position:absolute; inset:0; z-index:1; pointer-events:none; overflow:hidden; will-change:opacity}
+  .cloud{position:absolute; will-change:transform; animation:drift linear infinite;
+    background:
+      radial-gradient(closest-side, rgba(255,255,255,.98), transparent) 18% 62%/42% 62% no-repeat,
+      radial-gradient(closest-side, rgba(255,255,255,1), transparent) 48% 38%/56% 98% no-repeat,
+      radial-gradient(closest-side, rgba(255,255,255,.98), transparent) 79% 60%/40% 60% no-repeat;}
+  .c1{top:10%; left:-12%; width:250px; height:96px;  animation-duration:78s;  opacity:.85}
+  .c2{top:22%; left:-18%; width:350px; height:128px; animation-duration:98s;  animation-delay:-32s; opacity:.7}
+  .c3{top:5%;  left:-14%; width:190px; height:76px;  animation-duration:66s;  animation-delay:-50s; opacity:.85}
+  .c4{top:34%; left:-14%; width:300px; height:112px; animation-duration:116s; animation-delay:-72s; opacity:.55}
+  .c5{top:16%; left:-10%; width:160px; height:66px;  animation-duration:60s;  animation-delay:-22s; opacity:.75}
+  @keyframes drift{from{transform:translateX(0)}to{transform:translateX(132vw)}}
+
+  /* --- opening title (top) --- */
+  .opening{
+    position:absolute; top:0; left:0; right:0; z-index:7;
+    padding:6.5vh 6vw 0; text-align:center; will-change:opacity,transform;
+  }
+  .om{font-family:var(--deva); color:#7C1226; font-size:clamp(34px,6vw,58px); line-height:1;
+      text-shadow:0 2px 10px rgba(255,255,255,.65)}
+  .ganesha{width:clamp(50px,7.5vw,72px); margin:.4rem auto .35rem; line-height:0;
+      filter:drop-shadow(0 3px 7px rgba(120,80,20,.28))}
+  .ganesha img,.ganesha svg{width:100%; height:auto; display:block}
+  .invocation{font-family:var(--serif); font-style:normal; font-weight:500; color:#6E1023; font-size:clamp(12px,2.1vw,18px);
+      margin-top:.4rem; letter-spacing:.02em; white-space:nowrap; text-shadow:0 1px 5px rgba(255,255,255,.6)}
+  /* Each blessing is its own span so the break point is explicit rather than
+     left to the wrapping algorithm: on desktop they sit side by side separated
+     by an em space, on a phone the second drops to its own line. */
+  .invocation .inv-part{display:inline-block; white-space:nowrap}
+  .invocation .inv-part + .inv-part{margin-left:1em}
+  @media(max-width:640px){
+    .invocation{white-space:normal; line-height:1.5}
+    .invocation .inv-part{display:block}
+    .invocation .inv-part + .inv-part{margin-left:0; margin-top:.12em}
+  }
+  .eyebrow{
+    font-family:var(--caps); text-transform:uppercase; letter-spacing:.42em;
+    color:#96660F; font-size:clamp(11px,1.7vw,14px); margin:1.6rem 0 .5rem; padding-left:.42em;
+    text-shadow:0 1px 4px rgba(255,255,255,.5);
+  }
+  .hosts{
+    font-family:var(--serif); font-weight:400; font-style:italic;
+    color:#5E0F20; font-size:clamp(20px,3.4vw,32px); text-shadow:0 1px 5px rgba(255,255,255,.5);
+  }
+  .scroll-hint{
+    position:absolute; left:50%; bottom:4.5vh; transform:translateX(-50%);
+    z-index:8; color:var(--gold-lt); text-align:center; white-space:nowrap;
+    display:flex; align-items:center; gap:.65rem;
+    font-family:var(--caps); letter-spacing:.28em; text-transform:uppercase;
+    font-size:11px; opacity:.95;
+    padding:.62rem 1.35rem .62rem 1.5rem; border-radius:40px;
+    background:linear-gradient(180deg, rgba(58,7,18,.62), rgba(38,5,12,.58));
+    border:1px solid rgba(203,161,53,.46);
+    backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px);
+    text-shadow:0 1px 6px rgba(0,0,0,.7);
+    box-shadow:0 6px 22px rgba(0,0,0,.3), 0 0 0 0 rgba(203,161,53,.0);
+    animation:hintGlow 2.8s ease-in-out infinite;
+  }
+  .scroll-hint .hint-icon{flex:none; display:flex; line-height:0; opacity:.92}
+  .scroll-hint .hint-icon svg{display:block}
+  .scroll-hint .hint-dot{animation:hintDot 1.6s cubic-bezier(.4,0,.2,1) infinite}
+  /* The dot travels UPWARD. Going down the page means swiping up, so a dot falling
+     downwards read as the opposite of the gesture the guest has to make. */
+  @keyframes hintDot{
+    0%{opacity:0; transform:translateY(4px)}
+    15%{opacity:1}
+    75%{opacity:1; transform:translateY(-8px)}
+    100%{opacity:0; transform:translateY(-11px)}
+  }
+  @keyframes hintGlow{
+    0%,100%{box-shadow:0 6px 22px rgba(0,0,0,.3), 0 0 0 0 rgba(203,161,53,0)}
+    50%{box-shadow:0 8px 26px rgba(0,0,0,.36), 0 0 16px 1px rgba(203,161,53,.32)}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .scroll-hint,.scroll-hint .hint-dot{animation:none}
+  }
+
+  /* --- ambient hero decor --- */
+  .ambient{position:absolute; inset:0; z-index:6; pointer-events:none; will-change:opacity}
+  .lamp{position:absolute; top:-2vh; width:clamp(90px,13vw,170px); transform-origin:50% 0;
+        filter:drop-shadow(0 12px 26px rgba(0,0,0,.4))}
+  .lamp img{width:100%}
+  /* the 90px floor is too wide a share of a small screen: it squeezed the
+     invocation into the lamps. Shrink them below 400px. */
+  @media(max-width:400px){ .lamp{width:70px} }
+  .lamp.l{left:2vw; animation:sway 5.5s ease-in-out infinite}
+  .lamp.r{right:2vw; animation:sway 6.2s ease-in-out infinite reverse}
+  @keyframes sway{0%,100%{transform:rotate(-2.2deg)}50%{transform:rotate(2.2deg)}}
+
+  /* banana leaves flanking the opening blessing, like an entrance */
+  /* Invocation is the very first section after the reveal; use a snug top
+     padding so the kalash and banana leaves arrive close to the transition. */
+  .invoke{overflow:hidden; padding-top:clamp(4px,1vw,14px); padding-bottom:clamp(30px,5vw,64px)}
+  .entry-leaf{position:absolute; top:-4%; width:clamp(80px,12vw,150px); z-index:0; opacity:calc(.9 * var(--invoke-ornament-opacity,1));
+    pointer-events:none; filter:drop-shadow(0 10px 20px rgba(74,48,20,.18))}
+  .entry-leaf img{width:100%}
+  .entry-leaf.l{left:-1%; transform-origin:bottom center; transform:rotate(12deg)}
+  .entry-leaf.r{right:-1%; transform-origin:bottom center; transform:scaleX(-1) rotate(12deg)}
+  .invoke .kalash,.invoke .om2,.invoke .sk,.invoke .lede{position:relative; z-index:1}
+  @media(max-width:640px){
+    /* Phone: the blessing text was landing on top of the banana leaves. Pull the
+       leaves further out and lighten them, and inset the invocation text so the
+       two never meet. (The leaves read as flankers here, not as full artwork.) */
+    .entry-leaf{width:74px; opacity:calc(.55 * var(--invoke-ornament-opacity,1))}
+    .entry-leaf.l{left:-12%}
+    .entry-leaf.r{right:-12%}
+    .invoke{padding-left:13vw; padding-right:13vw}
+  }
+
+  .petal{position:absolute; top:-6%; width:12px; height:12px; border-radius:60% 40% 55% 45%;
+    background:radial-gradient(circle at 35% 30%, var(--gold-lt), var(--coral));
+    opacity:.0; pointer-events:none; z-index:6}
+
+  /* --- camera / gopuram --- */
+  .camera{
+    position:absolute; inset:0; z-index:2;
+    display:flex; align-items:flex-start; justify-content:center;
+    transform-origin:50% 100%; will-change:transform,opacity;
+  }
+  /* display:contents keeps the <picture> wrapper out of the layout entirely, so the
+     <img> stays the direct flex item of .camera exactly as before. */
+  .camera picture{display:contents}
+  .gopuram{width:100vw; max-width:none; height:auto; image-rendering:-webkit-optimize-contrast}
+  @media (max-width:680px){ .gopuram{width:auto; height:160vh} }
+
+  /* ---- phone paint budget ----------------------------------------------------
+     Everything below trades effects that cost a re-raster on every animated frame
+     for cheaper equivalents. They're scoped to small screens, so the desktop
+     rendering is untouched. */
+  @media (max-width:680px){
+    /* the sharpening filter re-samples the temple on each zoom step; the phone copy
+       is already close to its display size, so default smoothing is both cheaper
+       and better here */
+    .gopuram{image-rendering:auto}
+    /* fewer promoted compositor layers = less GPU memory to juggle mid-animation */
+    .clouds,.ambient,.top-scrim,.glow{will-change:auto}
+    /* mask + multiply blend + 4-stage filter chain, on a subtree this animation
+       scales up to 3.4x. Flattened to a plain low-opacity sepia draw, which reads
+       the same at 13% over cream. */
+    .door-wm img{mix-blend-mode:normal; filter:sepia(.5) saturate(.6); opacity:.13}
+    /* a 3px blur on a soft radial gradient is invisible; the re-blur per frame is not */
+    .names::before{filter:none}
+
+    /* backdrop-filter re-blurs whatever is behind the element on EVERY frame. These
+       three sit on screen throughout the reveal, so on a weak GPU they were taxing
+       every frame of the temple animation. Their backgrounds are already near-opaque,
+       so dropping the blur is barely visible. */
+    .music-btn, .music-cue, .scroll-hint{
+      -webkit-backdrop-filter:none; backdrop-filter:none;
+      background:rgba(252,246,232,.94);
+    }
+    .scroll-hint{background:linear-gradient(180deg, rgba(58,7,18,.82), rgba(38,5,12,.8))}
+    /* box-shadow can't be composited — animating it repaints the pill continuously
+       while the hero is on screen. The dot's motion already carries the hint. */
+    .scroll-hint{animation:none}
+    /* a drop-shadow filter on the door, inside a subtree this animation scales up to
+       3.4x, is re-rendered every frame. The frame reads fine against the cream niche. */
+    .frame-img{filter:none}
+    /* ---- phone paint budget: reduce decorative layers ---- */
+    /* fewer drifting clouds — still read as "sky" at 2 instead of 5 */
+    .c3,.c4,.c5{display:none}
+    /* stage sky gradient: 6-stop is ~30% more paint time than a 3-stop on mobile.
+       The mid-band shift is invisible at phone scale. */
+    .stage{background:linear-gradient(180deg,#9DBFDB 0%,#D3E1E4 38%,#EFCE96 100%)}
+    /* warm horizon glow behind the temple — the radial + transparent costs a
+       separate paint pass on every phone frame; on mobile the sky gradient alone
+       reads fine. */
+    .stage::after{display:none}
+    /* the door-niche radial gradient + 3 inset shadows re-render whenever the door
+       subtree is composited. Solid cream + 1 shadow reads identically at phone
+       scale inside the dim doorway. */
+    .glow{background:#F5EAD2; box-shadow:inset 0 22px 46px rgba(74,12,26,.18)}
+    /* lamp and leaf shadows aren't visible at phone size on the cream ground */
+    .lamp{filter:none}
+    .entry-leaf{filter:none}
+  }
+
+  /* keeps the title legible over the now full-width temple */
+  .top-scrim{position:absolute; top:0; left:0; right:0; height:44vh; z-index:3; pointer-events:none;
+    background:linear-gradient(180deg, rgba(244,249,252,.55) 0%, rgba(244,249,252,.18) 46%, rgba(244,249,252,0) 100%);
+    will-change:opacity}
+
+  /* vignette that eases the hand-off to the doors */
+  .vignette{position:absolute; inset:0; z-index:3; opacity:0; pointer-events:none;
+    background:radial-gradient(85% 78% at 50% 50%, rgba(80,18,35,.92) 0%, rgba(48,9,20,.98) 55%, #280611 100%)}
+  /* transition bloom: the doorway light expands into the content page's cream.
+     Solid #F5EAD2 (== var(--cream)) so the fill is IDENTICAL to the body cream
+     behind the content sections — no lighter/whiter halo at the top of the
+     viewport during the sticky-stage release. */
+  .bloom{position:absolute; inset:0; z-index:8; opacity:0; pointer-events:none; transform-origin:50% 47%;
+    background: #F5EAD2}
+  /* Temple silhouette that fades in on TOP of the bloom cream. Fixed to the
+     viewport (not to the stage) and styled identically to the body watermark,
+     so as the sticky stage releases, the temple stays anchored in the same
+     spot — the top of the viewport shows cream + temple, matching the content
+     section revealing below (cream + body watermark) with no visible seam. */
+  .bloom-wm{
+    position:fixed; inset:0; z-index:9; opacity:0; pointer-events:none;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .bloom-wm img{
+    width:min(120vh,900px); max-width:150%;
+    opacity:.06; filter:sepia(.5) saturate(.7);
+    -webkit-user-drag:none; user-select:none;
+  }
+
+
+  /* --- doorway: STATIC ornate frame + two swinging wooden leaves --- */
+  .doorframe{
+    /* Starts hidden ON PURPOSE. Until the script has run and measured the temple,
+       the door has no transform, so it would paint at its natural ~94vh size dead
+       centre — that was the full-size door flashing over the page on first load.
+       render() reveals it on the first frame where it can be placed correctly. */
+    position:absolute; inset:0; z-index:5; opacity:0;
+    display:flex; align-items:center; justify-content:center;
+    /* transform-origin is set per-frame in JS: the doorway's real screen position
+       depends on the viewport (it lands at ~59% of the screen on a phone but ~31%
+       on a wide desktop), so a fixed origin threw the names off the bottom edge. */
+    will-change:opacity,transform;
+  }
+  .door-scene{position:relative; height:min(94vh,1040px); aspect-ratio:.6546;
+    transform:scale(.9); will-change:transform}
+  .frame-img{position:absolute; inset:0; width:100%; height:100%; z-index:4; pointer-events:none;
+    filter:drop-shadow(0 26px 56px rgba(0,0,0,.62))}
+  /* Cream backdrop for the doorway interior — sized to sit EXACTLY inside the
+     ornate frame's transparent door opening (measured from the source PNG:
+     x ≈ 20.3%–79.6%, y ≈ 26.7%–95.2%), so cream never spills into the
+     transparent top-corners of the frame or leaks past the pillars. Matches the
+     cream of the content sections below for a seamless cream-to-cream handoff. */
+  .glow{position:absolute; left:20%; top:26.5%; width:60%; height:69%; z-index:1; opacity:1;
+    background:
+      radial-gradient(closest-side at 50% 48%, #FCF8EF 0%, #F5EAD2 60%, #F0E4C8 100%),
+      #F5EAD2;
+    /* inner shadow reads as a recessed niche behind the frame — darker at the
+       top/sides where the carved doorway would cast shade, lighter at centre
+       where the interior "light" falls — so the panel behind the doors feels
+       like depth rather than a flat card. */
+    box-shadow:
+      inset 0 22px 46px rgba(74,12,26,.20),
+      inset 0 -14px 34px rgba(74,12,26,.10),
+      inset 0 0 0 1px rgba(74,12,26,.06);
+    will-change:opacity}
+  /* Faint sepia gopuram silhouette inside the doorway, matching the .watermark
+     that appears behind the content sections below. Src is cloned at runtime
+     from the single embedded .camera .gopuram <img> (no duplicate base64).
+     Masked + blended (rather than a flat cropped rectangle) so the silhouette
+     dissolves into the cream niche instead of reading as a pasted photo. */
+  .door-wm{position:absolute; left:20%; top:26.5%; width:60%; height:69%; z-index:1;
+    overflow:hidden; pointer-events:none;
+    -webkit-mask-image:radial-gradient(120% 92% at 50% 36%, #000 52%, transparent 96%);
+    mask-image:radial-gradient(120% 92% at 50% 36%, #000 52%, transparent 96%);}
+  .door-wm img{
+    position:absolute; left:-8%; top:-8%; width:116%; height:116%;
+    object-fit:cover; object-position:center 32%;
+    opacity:.17; mix-blend-mode:multiply;
+    filter:sepia(.55) saturate(.6) brightness(1.1) contrast(.92);
+    -webkit-user-drag:none; user-select:none;}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  .names{position:absolute; left:50%; top:60%; transform:translate(-50%,-50%);
+    z-index:2; width:72%; text-align:center; opacity:0; will-change:opacity,transform}
+  .names::before{content:""; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+    width:150%; height:150%; z-index:-1; border-radius:50%;
+    background:radial-gradient(closest-side, rgba(255,251,240,.97), rgba(255,247,224,.9) 42%, rgba(255,245,216,.45) 66%, rgba(255,245,216,0) 82%);
+    filter:blur(3px)}
+  .names .bless{font-family:var(--serif); font-style:italic; font-weight:400; color:#5a1322;
+    font-size:clamp(11px,1.9vh,15px); line-height:1.35; margin-bottom:.7rem;
+    text-shadow:0 1px 3px rgba(255,250,236,.9)}
+  .names .who{font-family:var(--serif); font-weight:600; color:#5E0F20;
+    font-size:clamp(23px,6.4vh,50px); line-height:1.02; letter-spacing:.01em; white-space:nowrap;
+    text-shadow:0 1px 2px rgba(255,252,244,.95), 0 0 16px rgba(255,247,222,.7)}
+  .names .amp{font-family:var(--serif); font-style:italic; color:var(--gold-deep);
+    font-size:clamp(15px,3vh,26px); margin:.25rem 0; display:flex; align-items:center; gap:.7rem; justify-content:center}
+  .names .amp::before,.names .amp::after{content:""; height:1px; width:clamp(16px,5vh,44px);
+    background:linear-gradient(90deg,transparent,var(--gold-deep))}
+  .names .amp::after{background:linear-gradient(90deg,var(--gold-deep),transparent)}
+  .names .whenat{margin-top:.9rem; font-family:var(--caps); letter-spacing:.24em; text-transform:uppercase;
+    color:#6E1023; font-weight:500; font-size:clamp(10px,1.6vh,13px); text-shadow:0 1px 3px rgba(255,250,236,.9)}
+
+  .leaf{position:absolute; top:26.5%; height:69%; width:30%; z-index:3; backface-visibility:hidden;
+    will-change:transform; transform:translateZ(0)}
+  .leaf img{width:100%; height:100%; display:block}
+  .leaf.l{left:20%; transform-origin:left center;  transform:perspective(1500px) rotateY(0deg)}
+  .leaf.r{left:50%; transform-origin:right center; transform:perspective(1500px) rotateY(0deg)}
+
+  /* ================= CONTENT ================= */
+  /* The stage is opaque (sky gradient, then .bloom paints solid #F5EAD2 over
+     it), so content placed after the wrap can't be seen until the whole 100vh
+     stage has scrolled off — that was a full blank screen of scrolling.
+     Instead the content is pulled up into the release zone and given a higher
+     z-index than .reveal-wrap (2), so it paints ON TOP of the finished cream.
+     The bloom cream and the page cream are the same value, so the seam between
+     stage and content is invisible. JS keeps it at opacity 0 until the reveal
+     is nearly done, so it can't appear over the doorway animation. */
+  .content{position:relative; z-index:3; background:transparent; margin-top:-90vh; overflow-anchor:none; --invoke-ornament-opacity:1}
+  /* content-visibility:auto keeps five sections' worth of layout and image decoding
+     out of the way of first paint. Two things make it a liability if left alone:
+     the size is only a GUESS until a section has rendered once, so the page is
+     shorter than the real content; and the skipped work lands the instant a section
+     scrolls into view, which is the worst possible moment. `auto 900px` makes the
+     browser remember the real height after the first pass, and .warm (set from JS
+     once the door reveal is under way) claims the work early instead. */
+  .section{position:relative; padding:clamp(56px,9vw,120px) 6vw; max-width:920px; margin:0 auto; text-align:center; content-visibility:auto; contain-intrinsic-size:auto 900px}
+  .invoke.section{content-visibility:visible; contain-intrinsic-size:none}
+  body.warm .section{content-visibility:visible; contain-intrinsic-size:none}
+  @media (max-width:680px){
+    .content{z-index:3; opacity:1; margin-top:-8vh; --invoke-ornament-opacity:1}
+    .content .section{content-visibility:visible; contain-intrinsic-size:none}
+  }
+  .kicker{font-family:var(--caps); text-transform:uppercase; letter-spacing:.4em; padding-left:.4em;
+    font-size:12px; color:var(--gold-deep); margin-bottom:1.1rem}
+  .h-serif{font-family:var(--serif); font-weight:400; color:var(--maroon);
+    font-size:clamp(30px,6vw,52px); line-height:1.1}
+  .lede{font-size:clamp(16px,2.4vw,20px); color:var(--ink-soft); max-width:620px; margin:1.1rem auto 0}
+
+  /* divider */
+  .divider{display:flex; align-items:center; justify-content:center; gap:1rem; margin:0 auto;
+    max-width:520px; padding:clamp(24px,5vw,44px) 0}
+  .divider .rule{height:1px; flex:1; background:linear-gradient(90deg,transparent,var(--gold))}
+  .divider .rule.r{background:linear-gradient(90deg,var(--gold),transparent)}
+  .divider .mark{width:46px; height:46px; opacity:.9}
+  .divider .mark img{width:100%}
+
+  /* invocation */
+  .invoke .kalash{width:clamp(120px,20vw,180px); margin:0 auto .4rem;
+    aspect-ratio:320/447;
+    opacity:var(--invoke-ornament-opacity,1);
+    filter:drop-shadow(0 14px 24px rgba(94,15,32,.22))}
+  .invoke .kalash img{width:100%; height:auto; aspect-ratio:320/447}
+  .invoke .lede{margin-top:.3rem}
+  .invoke .om2{font-family:var(--deva); font-size:clamp(30px,6vw,46px); color:var(--maroon)}
+  .invoke .sk{font-family:var(--deva); color:var(--gold-deep); font-size:clamp(16px,2.6vw,22px); margin-top:.4rem}
+
+  /* blessings + invite */
+  .families{display:grid; grid-template-columns:1fr auto 1fr; gap:clamp(14px,4vw,40px); align-items:center;
+    margin-top:2.2rem; text-align:center}
+  .families .fam .role{font-family:var(--caps); text-transform:uppercase; letter-spacing:.22em; font-size:11px;
+    color:var(--gold-deep); margin-bottom:.5rem}
+  .families .fam .par{font-family:var(--serif); font-size:clamp(18px,2.8vw,24px); color:var(--ink); font-weight:500}
+  .families .fam .child{font-family:var(--serif); font-style:italic; color:var(--ink-soft); font-size:clamp(14px,2.2vw,17px); margin-top:.2rem}
+  .families .mid{font-family:var(--serif); font-style:italic; color:var(--gold-deep); font-size:clamp(20px,4vw,30px)}
+  @media(max-width:640px){
+    .families{grid-template-columns:1fr; gap:1.4rem}
+    .families .mid{transform:rotate(0)}
+  }
+
+  .invite-intro{margin-bottom:clamp(1.6rem,4vw,2.6rem)}
+  .invite-couple{font-family:var(--serif); font-weight:500; color:var(--maroon);
+    font-size:clamp(40px,11vw,86px); line-height:1; margin:.4rem 0 .25rem}
+  /* parentage sits directly under each name, so the families read as part of
+     the invitation itself rather than a separate roll-call above it */
+  .invite-par{font-family:var(--serif); color:var(--ink); font-weight:500;
+    font-size:clamp(15px,2.4vw,20px); line-height:1.35; letter-spacing:.01em}
+  .invite-grand{font-family:var(--serif); font-style:italic; color:var(--ink-soft);
+    font-size:clamp(13px,2vw,17px); line-height:1.35; margin-top:.15rem}
+  .invite-amp{display:block; font-family:var(--serif); font-style:italic; color:var(--gold-deep);
+    font-size:clamp(22px,5vw,34px); margin:clamp(.9rem,2.4vw,1.5rem) 0 clamp(.5rem,1.4vw,.9rem)}
+
+  /* events */
+  .events{display:grid; grid-template-columns:repeat(auto-fit,minmax(272px,1fr));
+    gap:clamp(16px,3vw,26px); margin-top:2.6rem; text-align:left}
+  .card{
+    position:relative; background:var(--panel); border:1px solid rgba(203,161,53,.5);
+    border-radius:6px; padding:clamp(24px,3.2vw,32px); overflow:hidden;
+    box-shadow:0 10px 30px rgba(94,15,32,.07);
+    contain:layout paint;
+  }
+  .card::before{content:""; position:absolute; top:0; left:0; right:0; height:4px;
+    background:linear-gradient(90deg,var(--coral),var(--gold),var(--teal))}
+  .card .cmark{position:absolute; right:-26px; bottom:-26px; width:120px; opacity:.10}
+  .card .cmark img{width:100%}
+  .card .en{font-family:var(--caps); text-transform:uppercase; letter-spacing:.2em;
+    font-size:clamp(11px,1.5vw,13px); color:var(--gold-deep)}
+  .card h3{font-family:var(--serif); color:var(--maroon); font-weight:600; font-size:clamp(24px,3.6vw,30px);
+    line-height:1.1; margin:.35rem 0 .1rem}
+  .card .sub{font-family:var(--serif); font-style:italic; color:var(--ink-soft);
+    font-size:clamp(16px,2vw,19px); line-height:1.4; margin-bottom:1rem}
+  .card .row{display:flex; gap:.6rem; font-size:clamp(16px,2.1vw,19px); line-height:1.45;
+    color:var(--ink); margin-top:.55rem; position:relative}
+  .card .row .lbl{color:var(--gold-deep); min-width:1.35em; flex:none}
+  .card .map{display:inline-block; margin-top:1rem; font-family:var(--caps); text-transform:uppercase;
+    letter-spacing:.16em; font-size:clamp(12px,1.6vw,13px); color:var(--teal); text-decoration:none;
+    border-bottom:1px solid var(--teal); padding-bottom:2px}
+  .card .map:hover{color:var(--coral); border-color:var(--coral)}
+
+  /* countdown */
+  .count-wrap{display:flex; align-items:center; justify-content:center; gap:clamp(10px,3vw,26px); margin-top:2.2rem; flex-wrap:wrap}
+  .cd-diya{width:clamp(58px,10vw,92px)}
+  .cd-diya img{width:100%; filter:drop-shadow(0 8px 16px rgba(94,15,32,.2))}
+  .cd-diya.flip img{transform:scaleX(-1)}
+  .count{display:flex; gap:clamp(10px,3vw,22px)}
+  .count .u{min-width:64px}
+  .count .n{font-family:var(--serif); font-weight:500; color:var(--maroon); font-size:clamp(38px,8vw,64px); line-height:1}
+  .count .l{font-family:var(--caps); text-transform:uppercase; letter-spacing:.2em; font-size:10px; color:var(--gold-deep); margin-top:.3rem}
+
+  /* rsvp */
+  .rsvp .lede{margin-bottom:1.8rem}
+  .btn{display:inline-flex; align-items:center; gap:.6rem; background:var(--maroon); color:var(--cream-2);
+    font-family:var(--caps); text-transform:uppercase; letter-spacing:.18em; font-size:13px;
+    padding:.95rem 1.8rem; border-radius:40px; text-decoration:none; border:1px solid var(--gold);
+    box-shadow:0 10px 24px rgba(94,15,32,.22); transition:transform .2s ease, background .2s ease}
+  .btn:hover{transform:translateY(-2px); background:var(--maroon-soft)}
+  .hashtag{margin-top:1.6rem; font-family:var(--serif); font-style:italic; color:var(--gold-deep); font-size:clamp(17px,3vw,22px)}
+
+  /* meet the couple — the portrait sits in an arched niche so it echoes the
+     temple doorway from the reveal. Radii are percentages so the arch keeps
+     its shape at every width instead of over-rounding on a phone. */
+  .couple .portrait{
+    width:min(100%,430px); margin:clamp(1.8rem,4.5vw,2.9rem) auto 0; padding:10px;
+    background:var(--panel); border:1px solid rgba(203,161,53,.55);
+    border-radius:50% 50% 8px 8px / 32% 32% 8px 8px;
+    box-shadow:0 18px 44px rgba(94,15,32,.15);
+  }
+  .couple .portrait img{
+    width:100%; height:auto; display:block;
+    border-radius:50% 50% 4px 4px / 32% 32% 4px 4px;
+  }
+  .couple .hashtag{margin-top:1.9rem}
+  /* the short couple tag sits tight under the long one and is otherwise identical to
+     it — same serif, same italic, same gold, same size. Only the gap above differs. */
+  .couple .hashtag.alt{margin-top:.45rem}
+
+  /* footer */
+  .foot{position:relative; z-index:1; text-align:center; padding:clamp(50px,8vw,90px) 6vw clamp(40px,6vw,70px);
+    background:linear-gradient(180deg, transparent, rgba(94,15,32,.05))}
+  .foot .lamp-f{width:clamp(90px,15vw,140px); margin:0 auto 1.2rem}
+  .foot .lamp-f img{width:100%}
+  .foot .om3{font-family:var(--deva); color:var(--maroon); font-size:clamp(26px,5vw,40px)}
+  .foot .blessing{font-family:var(--serif); font-style:italic; color:var(--ink-soft); max-width:520px; margin:1rem auto 0; font-size:clamp(15px,2.3vw,18px)}
+  .foot .credit{margin-top:2rem; font-family:var(--caps); letter-spacing:.24em; text-transform:uppercase; font-size:10px; color:var(--gold-deep)}
+
+  /* ---------- reduced motion / fallback: no pinned camera work ---------- */
+  body.reduced .reveal-wrap{height:auto}
+  body.reduced .stage{position:relative; height:auto; min-height:100vh; padding:8vh 0 10vh}
+  body.reduced .camera{position:relative; inset:auto; transform:none; opacity:1; margin-bottom:-2vh}
+  body.reduced .gopuram{height:auto; width:min(94vw,620px)}
+  body.reduced .opening{position:relative}
+  body.reduced .scroll-hint{display:none}
+  body.reduced .vignette{display:none}
+  body.reduced .clouds{display:none}
+  body.reduced .ambient .lamp{animation:none}
+  body.reduced .doorframe{position:relative; inset:auto; opacity:1; margin-top:-4vh; padding:4vh 0}
+  body.reduced .door-scene{transform:none}
+  body.reduced .leaf.l{transform:perspective(1500px) rotateY(-100deg)}
+  body.reduced .leaf.r{transform:perspective(1500px) rotateY(100deg)}
+  body.reduced .glow{opacity:1; transform:scale(1.05)}
+  body.reduced .names{opacity:1}
+  body.reduced .content{margin-top:0; opacity:1}
+  body.reduced .content .invoke{padding-top:clamp(48px,8vw,80px)}
+  body.reduced .ambient .petal{display:none}
+  body.reduced .section{content-visibility:visible; contain-intrinsic-size:none}
+  /* asset loading timed out — hide the unloaded door and show content cleanly */
+  body.asset-fallback .reveal-wrap{display:none}
+</style>
+</head>
+<body class="loading">
+
+  <div class="load-shell" id="loadShell" role="status" aria-live="polite" hidden="">
+    <div>
+      <div class="load-shell__mark"><img src="images/ganesha.webp" alt=""></div>
+      <div class="load-shell__title">Mahalakshmi &amp; Surya Prakash</div>
+      <div class="load-shell__sub">Shubha Vivaha</div>
+      <p class="load-shell__msg" id="loadShellMsg">Opening the invitation...</p>
+      <div class="load-shell__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- faint temple watermark behind all content -->
+  <div class="watermark"><img src="images/gopuram.webp" aria-hidden="true" alt=""></div>
+  <!-- viewport-fixed temple silhouette used ONLY during the reveal-end bloom;
+       matches .watermark img exactly so the transition into the content section
+       (which uses .watermark) is visually continuous -->
+  <div class="bloom-wm" id="bloomWm" aria-hidden="true"><img alt="" src="images/gopuram.webp"></div>
+
+  <!-- ===================== CINEMATIC REVEAL ===================== -->
+  <section class="reveal-wrap" id="reveal">
+    <div class="stage">
+      <div class="clouds" id="clouds">
+        <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+        <span class="cloud c4"></span><span class="cloud c5"></span>
+      </div>
+      <div class="top-scrim" id="topscrim"></div>
+      <!-- opening title -->
+      <div class="opening" id="opening">
+        <div class="ganesha" aria-label="Sri Ganesha"><img src="images/ganesha.webp" alt="Sri Ganesha"></div>
+        <div class="invocation" id="invocation"><span class="inv-part" id="inv-1">|| Shri Veeramahashakthi Amman Thunai ||</span><span class="inv-part" id="inv-2">|| Shri Gurubhyo Namaha ||</span></div>
+        <div class="eyebrow" id="eyebrow">Shubha Vivaha</div>
+        <div class="hosts" id="hosts">Together with our families</div>
+      </div>
+
+      <!-- ambient decor -->
+      <div class="ambient" id="ambient">
+        <div class="lamp l"><img src="images/lamp.webp" alt=""></div>
+        <div class="lamp r"><img src="images/lamp.webp" alt=""></div>
+      </div>
+
+      <!-- gopuram camera -->
+      <div class="camera" id="camera">
+        <!-- The gopuram source was 4920x8518 (42 MP) = ~168 MB once decoded to a bitmap,
+             and this animation scales it live, so weaker phones thrashed re-rasterising it
+             and the temple scroll stuttered. It is now served at two sensible sizes: phones
+             take the 1600px copy (~18 MB decoded), everything else the 2800px copy (~54 MB),
+             still crisp at 100vw on a retina screen. -->
+        <picture>
+          <source media="(max-width:680px)" type="image/webp" srcset="images/gopuram-mobile.webp">
+          <img class="gopuram" decoding="async" src="images/gopuram.webp" alt="Temple gopuram">
+        </picture>
+      </div>
+
+      <div class="vignette" id="vignette"></div>
+
+      <!-- doorway: ornate frame stays put, wooden leaves swing open -->
+      <div class="doorframe" id="doorframe">
+        <div class="door-scene" id="doorscene">
+          <div class="glow" id="glow"></div>
+          <div class="door-wm" id="doorwm" aria-hidden="true"><img alt="" src="images/gopuram.webp"></div>
+          <div class="names" id="names">
+            <div class="who" id="bride">Mahalakshmi</div>
+            <div class="amp" id="join">weds</div>
+            <div class="who" id="groom">Surya Prakash</div>
+            <div class="whenat" id="whenat">11 November 2026</div>
+          </div>
+          <div class="leaf l" id="doorL"><img src="images/door-leaf-left.webp" alt=""></div>
+          <div class="leaf r" id="doorR"><img src="images/door-leaf-right.webp" alt=""></div>
+          <img class="frame-img" src="images/frame.webp" alt="Temple doorway">
+        </div>
+      </div>
+
+      <div class="bloom" id="bloom"></div>
+
+      <div class="scroll-hint" id="hint">
+        <span>Scroll down</span>
+        <span class="hint-icon" aria-hidden="true">
+          <svg width="16" height="26" viewBox="0 0 16 26" fill="none">
+            <rect x="1" y="1" width="14" height="24" rx="7" stroke="currentColor" stroke-width="1.4"></rect>
+            <circle class="hint-dot" cx="8" cy="17" r="2" fill="currentColor"></circle>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTENT ===================== -->
+  <main class="content" id="content">
+
+    <!-- invocation -->
+    <section class="section invoke">
+      <span class="entry-leaf l"><img decoding="async" src="images/entry-leaf.webp" alt=""></span>
+      <span class="entry-leaf r"><img decoding="async" src="images/entry-leaf.webp" alt=""></span>
+      <div class="kalash"><img decoding="async" width="320" height="447" src="images/kalash.webp" alt="Kalash"></div>
+      <p class="lede" id="invoke-en">We seek the blessings of Lord Ganesha for a beginning free of obstacles, and invite you to share in our joy.</p>
+    </section>
+
+    <div class="divider"><span class="rule"></span><span class="mark"><img decoding="async" loading="lazy" src="images/divider-mark-1.webp" alt=""></span><span class="rule r"></span></div>
+
+    <!-- invitation: the couple, each under their parents' names -->
+    <section class="section">
+      <div class="kicker">With the blessings of our elders</div>
+      <p class="lede invite-intro" id="invite-intro">Our families request the honour of your presence as we exchange vows and begin our journey together.</p>
+
+      <div class="invite-couple" id="ic-bride">Mahalakshmi</div>
+      <div class="invite-par" id="ic-bp">Daughter of Smt. Mamatha &amp; Sri Shambhu Bhat</div>
+      <div class="invite-grand" id="ic-bgp" style="display: none;"></div>
+
+      <div class="invite-amp">weds</div>
+
+      <div class="invite-couple" id="ic-groom">Surya Prakash</div>
+      <div class="invite-par" id="ic-gp">Son of Smt. Geetha &amp; Sri Jayarama K R</div>
+      <div class="invite-grand" id="ic-ggp" style="display: none;"></div>
+    </section>
+
+    <!-- events -->
+    <section class="section">
+      <div class="kicker">The celebrations</div>
+      <h2 class="h-serif">Join us for every moment</h2>
+      <div class="events" id="events">
+  <article class="card">
+    <img class="cmark" src="images/divider-mark-1.webp" alt="">
+    <h3>Sangeet</h3>
+    <div class="sub">An evening of music &amp; dance</div>
+    <div class="row"><span class="lbl">◷</span><span>Tuesday, 10 November 2026</span></div>
+    <div class="row"><span class="lbl">✧</span><span>6:00 PM onwards</span></div>
+    <div class="row"><span class="lbl">⌖</span><span>Maha Ganapathi Temple</span></div>
+    <a class="map" href="https://share.google/9iauPvhvFWOxu85Uo" target="_blank" rel="noopener">See the route</a>
+  </article>
+  <article class="card">
+    <img class="cmark" src="images/divider-mark-1.webp" alt="">
+    <h3>Wedding</h3>
+    <div class="sub">Muhurtham — the sacred ceremony</div>
+    <div class="row"><span class="lbl">◷</span><span>Sunday, 11 November 2026</span></div>
+    <div class="row"><span class="lbl">✧</span><span>Muhurtham at 9:50 AM</span></div>
+    <div class="row"><span class="lbl">⌖</span><span>Maha Ganapathi Temple</span></div>
+    <a class="map" href="https://share.google/9iauPvhvFWOxu85Uo" target="_blank" rel="noopener">See the route</a>
+  </article>
+  <article class="card">
+    <img class="cmark" src="images/divider-mark-1.webp" alt="">
+    <h3>Vadhu Grihapravesham</h3>
+    <div class="sub">Welcoming the bride home</div>
+    <div class="row"><span class="lbl">◷</span><span>Thursday, 12 November 2026</span></div>
+    
+    <div class="row"><span class="lbl">⌖</span><span>Maha Ganapathi Temple</span></div>
+    <a class="map" href="https://share.google/oiEFno8nz21VGIZVn" target="_blank" rel="noopener">See the route</a>
+  </article>
+  <article class="card">
+    <img class="cmark" src="images/divider-mark-1.webp" alt="">
+    <h3>Reception</h3>
+    <div class="sub">Dinner &amp; celebration</div>
+    <div class="row"><span class="lbl">◷</span><span>Tuesday, 10 November 2026</span></div>
+    <div class="row"><span class="lbl">✧</span><span>6:30 PM onwards</span></div>
+    <div class="row"><span class="lbl">⌖</span><span>Maha Ganapathi Temple</span></div>
+    <a class="map" href="https://share.google/do2z6CfOkS61zpiri" target="_blank" rel="noopener">See the route</a>
+  </article></div>
+    </section>
+
+    <div class="divider"><span class="rule"></span><span class="mark"><img decoding="async" loading="lazy" src="images/divider-mark-2.webp" alt=""></span><span class="rule r"></span></div>
+
+    <!-- countdown -->
+    <section class="section">
+      <div class="kicker">The muhurtham approaches</div>
+      <h2 class="h-serif" id="cd-title">Counting down to the muhurtham</h2>
+      <div class="count-wrap">
+        <div class="cd-diya"><img decoding="async" src="images/diya.webp" alt=""></div>
+        <div class="count" id="count">
+          <div class="u"><div class="n" data-k="d">05</div><div class="l">Days</div></div>
+          <div class="u"><div class="n" data-k="h">17</div><div class="l">Hours</div></div>
+          <div class="u"><div class="n" data-k="m">16</div><div class="l">Min</div></div>
+          <div class="u"><div class="n" data-k="s">21</div><div class="l">Sec</div></div>
+        </div>
+        <div class="cd-diya flip"><img decoding="async" src="images/diya.webp" alt=""></div>
+      </div>
+    </section>
+
+    <!-- meet the couple -->
+    <section class="section couple">
+      <div class="kicker">Meet the couple</div>
+      <h2 class="h-serif">The bride &amp; groom</h2>
+      <figure class="portrait">
+        <img id="couplePortrait" decoding="async" src="assets/couple-portrait.jpg" alt="Mahalakshmi and Surya Prakash">
+      </figure>
+      <div class="hashtag" id="hashtag">#SuryaWedsMaha</div>
+      <div class="hashtag alt" id="hashtag2">#MahaSurya</div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="lamp-f"><img decoding="async" src="images/lamp.webp" alt=""></div>
+    <div class="om3">ॐ</div>
+    <p class="blessing" id="foot-bless">May this sacred union be blessed with love, laughter, and a lifetime of togetherness.</p>
+    <div class="credit" id="foot-names">Mahalakshmi &amp; Surya Prakash · 2026</div>
+  </footer>
+
+  <!-- Wedding music: the 1:27-2:25 passage of Seetha Kalyana Vaibhogame, faded in and
+       out at the edges so the loop wraps without a hard cut. -->
+  <button class="music-btn hint" id="musicBtn" type="button" aria-pressed="false" aria-label="Turn wedding music on">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 9.5h3.2L12.4 5v14l-5.2-4.5H4z"></path>
+      <g class="wave"><path d="M16.2 9.1a4.1 4.1 0 0 1 0 5.8"></path><path d="M18.7 6.6a7.6 7.6 0 0 1 0 10.8"></path></g>
+      <path class="slash" d="M16.4 8.6l5.2 6.8"></path>
+    </svg>
+  </button>
+  <span class="music-cue" id="musicCue" aria-hidden="true">Tap for music</span>
+
+<script>
+/* ============================================================
+   EDIT EVERYTHING HERE  ▸  names, parents, events, dates, links
+   ============================================================ */
+const CONFIG = {
+  invocationScript: "|| Shri Veeramahashakthi Amman Thunai ||\u2003|| Shri Angalaparameshwari Amman Thunai||",
+  eyebrow: "Shubha Vivaha",
+  hosts: "Together with our families",
+
+  bride: "Mahalakshmi",
+  groom: "Surya Prakash",
+  join: "weds",
+  whenAt: "10 & 11 November 2026",
+
+  // EDIT THESE FOUR VALUES with your actual family names.
+  brideParents: "Armugam & Shanthi A",
+  brideGrand: "",
+  groomParents: "Sugendra C & Amudha S",
+  groomGrand: "",
+
+  inviteIntro: "With the blessings of our elders and the grace of the divine, we invite you to share in our joy as we begin our journey together.",
+
+  brideRelation: "Daughter of ",
+  groomRelation: "Son of ",
+  brideGrandRelation: "Granddaughter of ",
+  groomGrandRelation: "Grandson of ",
+
+  events: [
+    { name:"Reception", sub:"An evening of celebration & togetherness",
+      date:"Tuesday, 10 November 2026", time:"7:00 PM onwards",
+      venue:"Rahul Convention Hall", map:"https://maps.app.goo.gl/W1cBnHynDoXbvJnaA" },
+    { name:"Muhurtham", sub:"The sacred Shubha Vivaha ceremony",
+      date:"Wednesday, 11 November 2026", time:"9:21 AM to 9:51 AM ",
+      venue:"Sri Maha Ganapathi Temple", map:"https://maps.app.goo.gl/2WDRBSgQHcHT2cERA" }
+  ],
+
+  // Update the time if you know the exact muhurtham.
+  muhurtham: "2026-11-11T09:00:00+05:30",
+  countdownTitle: "Counting down to the muhurtham",
+
+  whatsapp: "9844463832",
+  hashtag: "#SuryaWedsMaha",
+  hashtag2: "#MahaSurya",
+
+  invokeEnglish: "We seek the blessings of Lord Muruga for a beginning free of obstacles, and invite you to share in our joy.",
+  footBless: "May this sacred union be blessed with love, laughter, and a lifetime of togetherness."
+};
+
+/* ---------- loading shell + critical asset gate ---------- */
+const INVITE_READY = (function(){
+  const shell = document.getElementById('loadShell');
+  const msg = document.getElementById('loadShellMsg');
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const isMobile = window.matchMedia('(max-width:680px)').matches;
+  const criticalSelectors = [
+    '.opening .ganesha img',
+    '.camera .gopuram',
+    '.frame-img',
+    '#doorL img',
+    '#doorR img'
+  ];
+  // Mobile networks are slower: give the gopuram (a large WebP) enough time.
+  // On a known-slow connection (3G etc.) we extend further.
+  let netMs = 0;
+  if(navigator.connection && navigator.connection.effectiveType){
+    const slow = ['slow-2g','2g','3g'].includes(navigator.connection.effectiveType);
+    if(slow) netMs = 14000;
+  }
+  const timeoutMs = prefersReduced ? 4000 : (isMobile ? (netMs || 10000) : 4000);
+
+  function waitForImage(img){
+    return new Promise(resolve=>{
+      if(!img) return resolve({ok:false});
+      let done = false;
+      const finish = ok=>{
+        if(done) return;
+        done = true;
+        img.removeEventListener('load', onLoad);
+        img.removeEventListener('error', onError);
+        resolve({src:img.currentSrc || img.src, ok});
+      };
+      const onLoad = ()=>{
+        if(img.decode) img.decode().then(()=>finish(true), ()=>finish(true));
+        else finish(true);
+      };
+      const onError = ()=>finish(false);
+      if(img.complete && img.naturalWidth > 0) onLoad();
+      else if(img.complete) finish(false);
+      else{
+        img.addEventListener('load', onLoad, {once:true});
+        img.addEventListener('error', onError, {once:true});
+      }
+    });
+  }
+
+  const loaded = Promise.all(
+    criticalSelectors.map(selector=>waitForImage(document.querySelector(selector)))
+  ).then(results=>({
+    timedOut:false,
+    failed:results.some(item=>!item.ok),
+    results
+  }));
+  const timed = new Promise(resolve=>setTimeout(()=>resolve({
+    timedOut:true,
+    failed:false,
+    results:[]
+  }), timeoutMs));
+
+  return Promise.race([loaded, timed]).then(state=>{
+    if(state.timedOut || state.failed){
+      document.body.classList.add('asset-fallback');
+      if(msg) msg.textContent = 'Opening the invitation...';
+    }else if(msg){
+      msg.textContent = 'Opening the invitation...';
+    }
+    document.body.classList.add('ready');
+    document.body.classList.remove('loading');
+    if(shell) setTimeout(()=>{ shell.hidden = true; }, 520);
+    return state;
+  });
+})();
+
+/* ---------- populate text ---------- */
+const $ = (id)=>document.getElementById(id);
+function setText(id,v){ const el=$(id); if(el) el.textContent=v; }
+/* One CONFIG string, split on the em space into the two blessing spans, so the
+   line break stays a layout decision rather than something baked into the text. */
+(function(){
+  const parts = String(CONFIG.invocationScript).split('\u2003');
+  setText('inv-1',(parts[0]||'').trim());
+  setText('inv-2',(parts.slice(1).join(' ')||'').trim());
+  const second = $('inv-2');
+  if(second && !second.textContent) second.style.display='none';
+})();
+setText('eyebrow',CONFIG.eyebrow);
+setText('hosts',CONFIG.hosts);
+setText('bride',CONFIG.bride); setText('groom',CONFIG.groom); setText('join',CONFIG.join);
+setText('whenat',CONFIG.whenAt);
+setText('ic-bride',CONFIG.bride); setText('ic-groom',CONFIG.groom);
+/* Parentage lines under each name. Any field left blank in CONFIG simply
+   drops out, so the grandparent lines stay hidden until they're filled in. */
+function setRelation(id, prefix, value){
+  const el=$(id); if(!el) return;
+  if(value && value.trim()) el.textContent = prefix + value.trim();
+  else el.style.display='none';
+}
+setRelation('ic-bp',  CONFIG.brideRelation,      CONFIG.brideParents);
+setRelation('ic-gp',  CONFIG.groomRelation,      CONFIG.groomParents);
+setRelation('ic-bgp', CONFIG.brideGrandRelation, CONFIG.brideGrand);
+setRelation('ic-ggp', CONFIG.groomGrandRelation, CONFIG.groomGrand);
+setText('invite-intro',CONFIG.inviteIntro);
+setText('invoke-en',CONFIG.invokeEnglish);
+setText('cd-title',CONFIG.countdownTitle);
+setText('hashtag',CONFIG.hashtag);
+setText('hashtag2',CONFIG.hashtag2);
+// either tag can be blanked out in CONFIG; an empty one shouldn't leave a gap or,
+// in the chip's case, an empty pill floating under the portrait
+['hashtag','hashtag2'].forEach(id=>{
+  const h = $(id);
+  if(h && !h.textContent.trim()) h.style.display='none';
+});
+setText('foot-bless',CONFIG.footBless);
+setText('foot-names',CONFIG.bride+' & '+CONFIG.groom+' · '+(new Date(CONFIG.muhurtham)).getFullYear());
+const rsvpEl = $('rsvp');            // absent now that the RSVP section is gone
+if(rsvpEl) rsvpEl.href = CONFIG.whatsapp;
+document.title = CONFIG.bride+' & '+CONFIG.groom+' — Shubha Vivaha';
+
+/* ---------- couple portrait ---------- */
+(function(){
+  const portrait = document.getElementById('couplePortrait');
+  if(!portrait) return;
+  portrait.addEventListener('error', function(){
+    this.src = 'images/portrait.webp';
+  }, {once:true});
+})();
+
+/* ---------- event cards ---------- */
+const rangoli="images/divider-mark-1.webp?v=1";
+$('events').innerHTML = CONFIG.events.map(e=>`
+  <article class="card">
+    <img class="cmark" src="${rangoli}" alt="">
+    <h3>${e.name}</h3>
+    ${e.sub?`<div class="sub">${e.sub}</div>`:''}
+    <div class="row"><span class="lbl">◷</span><span>${e.date}</span></div>
+    ${e.time?`<div class="row"><span class="lbl">✧</span><span>${e.time}</span></div>`:''}
+    <div class="row"><span class="lbl">⌖</span><span>${e.venue}</span></div>
+    ${e.map?`<a class="map" href="${e.map}" target="_blank" rel="noopener">See the route</a>`:''}
+  </article>`).join('');
+
+/* ---------- countdown ---------- */
+(function(){
+  const target=new Date(CONFIG.muhurtham).getTime();
+  const set=(k,v)=>{const el=document.querySelector('.count .n[data-k="'+k+'"]'); if(el) el.textContent=String(v).padStart(2,'0');};
+  function tick(){
+    let diff=target-Date.now();
+    if(diff<0) diff=0;
+    const d=Math.floor(diff/864e5), h=Math.floor(diff%864e5/36e5),
+          m=Math.floor(diff%36e5/6e4), s=Math.floor(diff%6e4/1e3);
+    set('d',d); set('h',h); set('m',m); set('s',s);
+  }
+  tick(); setInterval(tick,1000);
+})();
+
+/* ============================================================
+   CINEMATIC SCROLL CHOREOGRAPHY
+   ============================================================ */
+function startRevealExperience(){
+/* The upscaled hi-res gopuram is embedded exactly once (on .camera .gopuram)
+   and then shared with the fixed page watermark and the faint temple
+   silhouette inside the doorway, so the file stays as small as it can while
+   the same crisp source drives every temple in the reveal. */
+(function shareTempleWatermark(){
+  const el = document.querySelector('.camera .gopuram');
+  // currentSrc is the copy <picture> actually picked for this viewport; reusing that
+  // exact URL means the watermarks share one decoded bitmap instead of forcing a
+  // second decode of the other size.
+  const src = el && (el.currentSrc || el.src);
+  if(!src) return;
+  const wmImg  = document.querySelector('.watermark img');
+  const dwmImg = document.querySelector('#doorwm img');
+  const bwmImg = document.querySelector('#bloomWm img');
+  if(wmImg)  wmImg.src  = src;
+  if(dwmImg) dwmImg.src = src;
+  if(bwmImg) bwmImg.src = src;
+})();
+
+const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+  document.body.classList.contains('asset-fallback');
+if(reduced){
+  document.body.classList.add('reduced','entered');
+  // No animation — warm content sections immediately so they lay out at
+  // their real sizes and no overlap / blank-gap can appear during scroll.
+  warmContent();
+} else {
+  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+  const norm=(v,a,b)=>clamp((v-a)/(b-a),0,1);
+  const lerp=(a,b,t)=>a+(b-a)*t;
+  const easeOut=t=>1-Math.pow(1-t,3);
+  const easeIn=t=>t*t;
+  const easeInOut=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+
+  const wrap=$('reveal'), opening=$('opening'), ambient=$('ambient'),
+        camera=$('camera'), gopuram=camera.querySelector('.gopuram'),
+        vignette=$('vignette'), doorframe=$('doorframe'), topscrim=$('topscrim'), doorscene=$('doorscene'),
+        doorL=$('doorL'), doorR=$('doorR'), glow=$('glow'), names=$('names'), hint=$('hint'), clouds=$('clouds'),
+        bloom=$('bloom'), bloomWm=$('bloomWm'),
+        stageEl=document.querySelector('.stage'),
+        contentEl=document.querySelector('.content');
+
+  // hidden until the reveal lands, so the overlap can't show through mid-animation
+  // on mobile the content sits behind the stage (z-index:1) — no JS opacity needed
+  const _mobile = window.matchMedia('(max-width:680px)').matches;
+  if(!_mobile){
+    contentEl.style.opacity='0';
+    contentEl.style.pointerEvents='none';
+    contentEl.style.setProperty('--invoke-ornament-opacity','0');
+  }
+
+  // These never change across the whole timeline. Setting them once keeps the
+  // per-frame work down to only the properties that actually animate.
+  gopuram.style.opacity = 1;
+  vignette.style.display = 'none';   // never used on this path; don't composite it
+  glow.style.opacity = 1;
+  glow.style.transform = 'scale(1)';
+
+  // cached per resize/load — avoids forced layout on every rAF frame.
+  // IMPORTANT: measure the gopuram with offsetHeight, NOT getBoundingClientRect().
+  // The image lives inside .camera, which this animation scales up to ~2.5x, and
+  // getBoundingClientRect() reports the POST-transform box. On iOS, scrolling back
+  // up re-expands the browser's URL bar, which fires a resize mid-animation — with
+  // rect.height that re-measured the temple at 2.5x, so the doorway's scale/position
+  // blew up and stayed wrong ("the door stays outside"). offsetHeight is the layout
+  // height and is immune to ancestor transforms, so it reads the same at any zoom.
+  let _gh = 0, _vhpx = window.innerHeight, _lastClipBottom = -1;
+  // Layout height of the .stage box. EVERYTHING about the temple + door geometry is
+  // expressed in this box's coordinates rather than in window.innerHeight, because
+  // .stage is 100lvh and .camera / .doorframe are inset:0 inside it — none of them
+  // move when the phone's bottom bar hides, but innerHeight grows toward lvh at that
+  // exact moment. Mixing the two is what un-welded the door from the temple.
+  let _stageH = window.innerHeight, _doorNatH = 0;
+  let _ambOff = false, _cldOff = false, _originSet = false;
+  let _scrimOff = false, _blOff = null;
+
+  /* ---- doorway placement, measured from the two source PNGs ------------------
+     The gopuram PNG carries a TRANSPARENT cut-out for the temple's own doorway at
+     x 0.4189–0.5811 and y 0.8241–0.9880 of the image, and that opening is wrapped
+     by the temple's own carved aedicule (pillars + lintel + gabled pediment).
+     The frame PNG's opening sits at y 0.265–0.955 of its height (the same inset
+     .glow/.leaf use). Lining the two openings up is what the old 0.88/0.24 pair
+     did — correct, but the frame was then too SMALL to hide the temple's carved
+     surround, so the temple's pillars and pediment stayed visible around it and
+     read as a second doorway nested outside the animated one.
+     DOOR_H is now large enough to cover that surround completely (0.46 starts
+     eating into the flanking wall figures, 0.34 still leaves the pediment showing).
+     DOOR_CY is DERIVED, so the frame's opening stays centred on the temple's
+     cut-out at whatever DOOR_H is set to. */
+  const TEMPLE_DOOR_TOP = 0.8241, TEMPLE_DOOR_BOT = 0.9880;
+  const FRAME_OPEN_TOP  = 0.265,  FRAME_OPEN_BOT  = 0.955;
+  const DOOR_H  = 0.38;
+  const DOOR_CY = (TEMPLE_DOOR_TOP + TEMPLE_DOOR_BOT)/2
+                - ((FRAME_OPEN_TOP + FRAME_OPEN_BOT)/2 - 0.5) * DOOR_H;
+  // The frame is now 1/SIZE_RATIO times bigger on screen than it used to be. Two
+  // things downstream were tuned against the old size and must NOT change with it:
+  // the push-through zoom (3.4x was what made the cream niche just overflow the
+  // viewport by p=1) and the names' type size. Both are scaled by SIZE_RATIO so
+  // they land exactly where they landed before — DOOR_H stays the only real knob.
+  const SIZE_RATIO = 0.24 / DOOR_H;
+  const wmEl = document.querySelector('.watermark');
+  // The door's position is derived from the temple's height, so until that height is
+  // real (on desktop the image is height:auto, i.e. 0 until it decodes) the door has
+  // nowhere correct to be and stays hidden.
+  let _ghReady = false;
+  // Every property below is rewritten up to 60x a second. Rounding the values and
+  // remembering the last string written means an unchanged property costs nothing:
+  // no template-string allocation, no style invalidation, no re-raster of that layer.
+  const _w = Object.create(null);
+  function put(el, prop, val, key){
+    if(_w[key] === val) return;
+    _w[key] = val;
+    el.style[prop] = val;
+  }
+  const r2 = v => Math.round(v*100)/100;       // opacity: 100 steps is plenty
+  const r1 = v => Math.round(v*10)/10;         // px offsets: 0.1px is sub-pixel
+  // Scales need finer rounding than opacity: the temple is ~1350px tall, so a 0.01
+  // step in zoom would move its edges by 13px and read as stepping. At 0.001 it's
+  // sub-pixel, while still collapsing enough distinct raster scales to help.
+  const r3 = v => Math.round(v*1000)/1000;
+  function _measureGopuram(){
+    return gopuram.offsetHeight || gopuram.naturalHeight || _vhpx;
+  }
+  function _recalcMetrics(){
+    _vhpx = window.innerHeight;
+    // offsetHeight, like the gopuram measurement above, is the LAYOUT height and so
+    // is immune both to the ancestor transforms this animation applies and to the
+    // browser bar sliding. Read here (on resize/orientation/load only) so render()
+    // still never forces a layout on a rAF frame.
+    _stageH = (stageEl && stageEl.offsetHeight) || _vhpx;
+    // .door-scene is min(94vh,1040px) in CSS; measuring it beats recomputing that
+    // expression from innerHeight, which is a different height on a phone mid-scroll.
+    _doorNatH = doorscene.offsetHeight || Math.min(0.94*_stageH, 1040);
+    _gh = _measureGopuram();
+    _ghReady = gopuram.offsetHeight > 0 || gopuram.naturalHeight > 0;
+  }
+  _recalcMetrics();
+  if(gopuram.complete) _recalcMetrics();
+  // re-measure AND repaint when the temple decodes: metrics alone left the door
+  // sitting on a placeholder height until the next scroll event
+  else gopuram.addEventListener('load', ()=>{ _recalcMetrics(); kick(); }, {once:true});
+  window.addEventListener('resize', _recalcMetrics, {passive:true});
+  window.addEventListener('orientationchange', _recalcMetrics, {passive:true});
+  // The mobile URL bar collapsing/expanding resizes the visual viewport without
+  // always firing a window resize; keep the cached metrics in step with it.
+  if(window.visualViewport){
+    window.visualViewport.addEventListener('resize', _recalcMetrics, {passive:true});
+  }
+
+  function render(p){
+    // opening title
+    const outT = norm(p,0.02,0.15);
+    put(opening,'opacity', String(r2(1-outT)), 'oOp');
+    put(opening,'transform', `translateY(${r1(lerp(0,-46,easeOut(outT)))}px)`, 'oTr');
+    const scrimOp = 1-norm(p,0.04,0.26);
+    put(topscrim,'opacity', String(r2(scrimOp)), 'sOp');
+    put(hint,'opacity', String(r2(1-norm(p,0.0,0.08))), 'hOp');
+    // a full-viewport gradient is pure fill cost once it's invisible
+    const scrimOff = scrimOp < 0.004;
+    if(scrimOff !== _scrimOff){ topscrim.style.display = scrimOff ? 'none' : ''; _scrimOff = scrimOff; }
+
+    // ambient wide-shot decor fades as we push in. Once faded, they're pulled out of
+    // the tree: the clouds and petals are infinite CSS animations that otherwise keep
+    // compositing behind the temple for the rest of the scroll, for nothing on screen.
+    const ambOp = 1-norm(p,0.05,0.36), cldOp = 1-norm(p,0.12,0.42);
+    put(ambient,'opacity', String(r2(ambOp)), 'aOp');
+    put(clouds,'opacity',  String(r2(cldOp)), 'cOp');
+    const ambOff = ambOp < 0.004, cldOff = cldOp < 0.004;
+    if(ambOff !== _ambOff){ ambient.style.display = ambOff ? 'none' : ''; _ambOff = ambOff; }
+    if(cldOff !== _cldOff){ clouds.style.display  = cldOff ? 'none' : ''; _cldOff = cldOff; }
+
+    // TEMPLE PAN: begin at the gopuram's crown, travel down to the base doorway...
+    // stageH, not vhpx: the camera's transform-origin is 50% 100% of .camera, which
+    // is inset:0 in the stage. Panning against innerHeight while the browser scaled
+    // about the stage's bottom edge meant the temple's rest position — and with it
+    // the door hanging off it — slid every time the bottom bar appeared or hid.
+    // vhpx is still needed further down, but only for the position:fixed bloom clip.
+    const gh = _gh, vhpx = _vhpx, stageH = _stageH;
+    const panDist = Math.max(1, gh - stageH);
+    const skyGap = Math.min(stageH*0.46, panDist*0.6);   // clear sky above the crown for the heading
+    const panT = easeInOut(norm(p,0.04,0.46));
+    const ty = lerp(skyGap, -(panDist), panT);   // ends with the temple BASE at the viewport bottom
+    // ...then PUSH INTO that same doorway (origin sits on the base entrance) so the carved
+    // doors that fade in read as a close-up of the doorway we just arrived at, not a new screen.
+    const camZoom = lerp(1, 1.9, easeIn(norm(p,0.40,0.72))) * lerp(1, 1.32, easeIn(norm(p,0.90,1.0)));
+    // scale3d rather than scale: it keeps the temple on a 3D-composited layer, which
+    // stops WebKit re-rasterising the whole bitmap on every single zoom step.
+    const cz = r3(camZoom);
+    put(camera,'transform', `translateZ(0) scale3d(${cz},${cz},1) translateY(${r1(ty)}px)`, 'camTr');
+
+    // The camera's origin IS the stage's bottom edge (transform-origin:50% 100% on an
+    // inset:0 child), so the screen position of any point on the temple has to be
+    // reconstructed about that same edge for the door to track it exactly.
+    const camOriginY = stageH;
+    const dwScreenY = camOriginY + camZoom*((DOOR_CY*gh + ty) - camOriginY);
+    const dwFrameH  = camZoom * DOOR_H * gh;
+    const doorNatH = _doorNatH;
+    put(doorframe,'opacity', _ghReady ? '1' : '0', 'dfOp');
+    // door stays LOCKED onto the temple's own door (base sits on the temple base), zooming with it
+    const dScale = r3(dwFrameH / doorNatH);
+    // .door-scene is centred in .doorframe, which is inset:0 in the stage — so its
+    // resting centre is stageH/2, NOT half the visible viewport.
+    put(doorscene,'transform', `translateY(${r1(dwScreenY - stageH/2)}px) scale3d(${dScale},${dScale},1)`, 'dsTr');
+
+    // FINAL ZOOM-THROUGH: once the doors have swung open, push the whole frame
+    // forward so the cream doorway interior expands past the viewport edges,
+    // handing off smoothly to the (also-cream) content section below.
+    const zt = easeIn(norm(p,0.83,1.0));
+    // 3.4 * SIZE_RATIO: the frame is bigger on screen now, so the SAME final niche
+    // size needs proportionally less push. Without this the cream would already be
+    // overflowing the viewport at zt=0 and the zoom-through beat would be gone.
+    const frameZoom = lerp(1, 3.4 * SIZE_RATIO, zt);
+    // Screen Y of the names before this zoom: .names sits at top:60% of .door-scene,
+    // i.e. 10% of the door's height below its centre.
+    const namesY = dwScreenY + 0.10*dwFrameH;
+    // Put the origin ON the names so the frame expands past them instead of flinging
+    // them away, then glide that point to the viewport centre as the zoom completes.
+    // While zt is 0 the frame transform is the identity, so its origin has no effect —
+    // and rewriting transform-origin every frame invalidates the whole door subtree's
+    // raster. Only touch it once the push-through is actually running.
+    if(zt > 0 || _originSet){
+      put(doorframe,'transformOrigin', `50% ${r1(namesY)}px`, 'dfOrg');
+      _originSet = zt > 0;
+    }
+    put(doorframe,'transform',
+      `translateY(${r1((stageH/2 - namesY) * zt)}px) scale3d(${r3(frameZoom)},${r3(frameZoom)},1)`, 'dfTr');
+
+    // once the zoom is essentially complete, the leaves swing open in place; the fully-open,
+    // fully-zoomed state then HOLDS (pinned) through to p=1 before the page scrolls to content.
+    const sw = easeOut(norm(p,0.64,0.83));
+    put(doorL,'transform', `perspective(1500px) rotateY(${r1(lerp(0,-102,sw))}deg)`, 'dlTr');
+    put(doorR,'transform', `perspective(1500px) rotateY(${r1(lerp(0, 102,sw))}deg)`, 'drTr');
+
+    // names revealed in the doorway, then dissolving into the cream as the bloom rises
+    const nm = norm(p,0.70,0.85);
+    put(names,'opacity', String(r2(nm * (1 - norm(p,0.95,1.0)))), 'nOp');
+    // divide out frameZoom: the names are inside .doorframe, so without this they'd
+    // balloon 3.4x during the push-through instead of sitting still at centre.
+    // ...and multiply by SIZE_RATIO: .names is a child of .door-scene, so it inherits
+    // dScale too. The bigger frame would otherwise render the type ~58% larger and
+    // push "Surya Prakash" (white-space:nowrap, 72% wide) out through the doorway.
+    put(names,'transform', `translate(-50%,-50%) scale(${r3(lerp(.94,1,easeOut(nm)) * SIZE_RATIO / frameZoom)})`, 'nTr');
+
+    // TRANSITION: the doorway light blooms into the content page's cream and zooms to full,
+    // so the reveal flows straight into the next section (cream-to-cream, no seam).
+    const bl = norm(p,0.93,1.0);
+    const blOff = bl <= 0;
+    if(blOff !== _blOff){
+      bloom.style.display   = blOff ? 'none' : '';
+      bloomWm.style.display = blOff ? 'none' : '';
+      // the page watermark is a big filtered image; it's hidden behind the opaque
+      // stage for the whole reveal, so there's no reason to composite it until now
+      if(wmEl) wmEl.style.display = blOff ? 'none' : '';
+      _blOff = blOff;
+    }
+    if(!blOff){
+      put(bloom,'opacity', String(r2(easeIn(bl))), 'blOp');
+      put(bloom,'transform', `scale(${r2(lerp(0.4,2.4,easeOut(bl)))})`, 'blTr');
+    }
+
+    // Bloom watermark <-> body watermark: matched at 0.06 EVERYWHERE.
+    // bloomWm is the temple silhouette layered on top of the bloom cream during
+    // the reveal end; the body .watermark is the same temple centered fixed
+    // behind the content sections. To avoid a doubled temple (both drawing at
+    // 0.06 in the overlap zone during the sticky-stage release, giving ~1.9×
+    // effective opacity), bloomWm is CLIPPED to only the stage's currently
+    // visible viewport area. Wherever the stage occupies the viewport, bloomWm
+    // draws the temple; wherever the stage isn't, only the body watermark
+    // draws — the two never overlap, so the temple sits at a constant 0.06
+    // through the whole transition.
+    const bloomOp = easeIn(bl);
+    if(!blOff) put(bloomWm,'opacity', String(r2(bloomOp)), 'bwOp');
+    // stage clip only matters while the bloom is visible (last ~7% of scroll);
+    // skipping this saves a forced layout on every rAF frame on the other 93%.
+    if(bloomOp > 0.001){
+      const stageBottom = stageEl.getBoundingClientRect().bottom;
+      const clipBottom  = Math.max(0, vhpx - stageBottom);
+      if(Math.abs(clipBottom - _lastClipBottom) > 0.5){
+        bloomWm.style.clipPath = `inset(0 0 ${clipBottom}px 0)`;
+        _lastClipBottom = clipBottom;
+      }
+    }
+
+    // The invocation is overlapped onto the release zone and follows the same animated
+    // reveal state as the temple. The ramp is deliberately broad and clamped before the
+    // mathematical end of the scroll so a quick flick cannot strand the guest on blank
+    // cream while the smoothed progress catches up.
+    // start warming content well before the names appear (p=0.70) so the
+    // kalasham, cards and their images are fully decoded by the time the
+    // content is revealed.  Once fires, warmContent is a no-op.
+    if(p > 0.5 && !_warmed) warmContent();
+    // on mobile the content sits behind the stage and scrolls in naturally
+    if(!_mobile){
+      const revealP = clamp(p, 0, 1);
+      const ct = easeOut(norm(revealP,0.985,1.0));
+      const ornamentCt = easeOut(norm(revealP,0.985,1.0));
+      put(contentEl,'opacity', String(r2(ct)), 'ctOp');
+      put(contentEl,'pointerEvents', ct > 0.5 ? 'auto' : 'none', 'ctPe');
+      const ornamentOp = String(r2(ornamentCt));
+      if(_w.ornOp !== ornamentOp){
+        _w.ornOp = ornamentOp;
+        contentEl.style.setProperty('--invoke-ornament-opacity', ornamentOp);
+      }
+    }
+  }
+
+  // Smooth the scroll-linked motion: ease the rendered progress toward the
+  // real scroll position every frame, so discrete wheel steps glide instead of jumping.
+  let targetP=0, curP=0, raf=null, _active=true;
+  // The wrapper height only changes on resize, so it's cached rather than re-read on
+  // every frame; _stageH is already maintained by the geometry pass above. That leaves
+  // measure() with a single layout read.
+  let _wrapH=0;
+  function remeasureBox(){ _wrapH = wrap.offsetHeight; }
+  function measure(){
+    // reading innerHeight is layout-free, so refresh it every measure: on mobile the
+    // URL bar changes viewport height mid-scroll, and if the door geometry used a
+    // stale height while this mapping used the live one, the two drifted apart.
+    _vhpx = window.innerHeight;
+    // The sticky travel is the wrapper minus the STAGE, not minus innerHeight: the stage
+    // has a fixed lvh height, while innerHeight changes as the browser bar hides, which
+    // would otherwise nudge the progress value every time the bar moved.
+    const total = Math.max(1, _wrapH - (_stageH || _vhpx));
+    targetP = clamp(-wrap.getBoundingClientRect().top/total, 0, 1);
+  }
+  // The old easing moved a fixed 16% of the remaining distance PER FRAME, so how fast
+  // the animation caught up to the scroll depended entirely on frame rate: ~0.35s at
+  // 60fps but twice that at 30fps. On a slow device the temple visibly trailed the
+  // finger, which read as lag even when frames were being delivered. This decays by
+  // elapsed TIME instead, so catch-up takes the same ~0.25s everywhere, and a long
+  // frame is compensated for rather than ignored.
+  let _prevT = 0;
+  const CATCH_MS = 250;
+  function tick(now){
+    const t = now || performance.now();
+    let dt = _prevT ? t - _prevT : 16;
+    _prevT = t;
+    if(dt > 100) dt = 100;                     // after a stall, don't lurch
+    // Read the real scroll position HERE, every frame, rather than only when a scroll
+    // event arrives. iOS withholds scroll events for the duration of a momentum fling,
+    // so a flick used to leave targetP frozen at wherever the last event put it — the
+    // loop would ease neatly to a stale target, park itself, and nothing would move
+    // again until the fling settled. Slow scrolling never showed it, because a steady
+    // dribble of events kept the target fresh. A frame is a frame whether or not an
+    // event came with it, so the position is now taken from layout on each one.
+    measure();
+    // A fling opens a far bigger gap than a wheel step does, and easing a large gap over
+    // the same 250ms reads as the temple lagging the finger — the exact complaint that
+    // only ever showed up on fast scrolling. Big gaps close in ~90ms, small ones keep the
+    // slow silky catch-up they were tuned for, interpolated between.
+    const gap = Math.abs(targetP - curP);
+    const catchMs = CATCH_MS - (CATCH_MS - 90) * Math.min(1, gap/0.25);
+    const a = 1 - Math.exp(-dt / (catchMs/3));
+    curP += (targetP - curP) * a;
+    const settled = Math.abs(targetP-curP) < 0.0005;
+    if(settled) curP = targetP;
+    render(curP);
+    // Keep going while the reveal is anywhere near the viewport even once settled: the
+    // loop is now the only thing reading scroll position, so parking it early would
+    // bring the stale-target problem straight back. put() skips unchanged writes, so a
+    // frame where nothing moved costs one layout read and a handful of comparisons.
+    if(_active || !settled) raf = requestAnimationFrame(tick);
+    else { raf = null; _prevT = 0; }
+  }
+  function kick(){ if(raf===null){ measure(); raf=requestAnimationFrame(tick); } }
+  window.addEventListener('scroll', kick, {passive:true});
+  window.addEventListener('resize', ()=>{ remeasureBox(); kick(); });
+  // Once the guest is well past the reveal there is nothing left to drive, so the loop
+  // parks rather than burning a frame callback for the rest of the page — and wakes the
+  // moment the reveal comes back into range.
+  if(window.IntersectionObserver){
+    new IntersectionObserver(es=>{
+      _active = es[0].isIntersecting;
+      if(_active) kick();
+    }, {rootMargin:'250px 0px 250px 0px'}).observe(wrap);
+  }
+  remeasureBox();
+  measure(); curP=targetP; render(curP);   // paint immediately at the true position
+  kick();
+
+  /* gentle falling marigold petals in the hero */
+  const stage=document.querySelector('.stage');
+  // each petal is its own infinitely animating layer; phones get a lighter fall
+  const petals = window.matchMedia('(max-width:680px)').matches ? 2 : 9;
+  for(let i=0;i<petals;i++){
+    const s=document.createElement('span'); s.className='petal';
+    s.style.left=(6+Math.random()*88)+'%';
+    const dur=(7+Math.random()*7), delay=(-Math.random()*10);
+    const drift=(Math.random()*40-20);
+    s.style.animation=`fall ${dur}s linear ${delay}s infinite`;
+    s.style.setProperty('--drift',drift+'px');
+    s.style.opacity='0';
+    stage.querySelector('.ambient').appendChild(s);
+  }
+  const st=document.createElement('style');
+  st.textContent='@keyframes fall{0%{transform:translateY(-8vh) translateX(0) rotate(0);opacity:0}'+
+    '8%{opacity:.85}90%{opacity:.7}100%{transform:translateY(108vh) translateX(var(--drift)) rotate(240deg);opacity:0}}';
+  document.head.appendChild(st);
+}
+}
+INVITE_READY.then(startRevealExperience);
+
+/* ============================================================
+   WARMING THE CONTENT SECTIONS
+   The sections carry content-visibility:auto, which is right for first paint —
+   otherwise five sections of layout and ~20 image decodes happen before the door
+   is even on screen. But skipped work still has to happen sometime, and left to
+   itself the browser picks the worst moment: the frame a section scrolls into
+   view. On a phone that reads as a blank panel that pops in late, and since a
+   skipped section is only guessed at, the page is shorter than the real content,
+   so a fast scroll runs out of page before anything has rendered.
+
+   The guest spends 320vh of scrolling inside the door reveal, which is plenty of
+   idle time. So the work is taken deliberately: switch the sections on, then walk
+   the images decoding them off the main thread one at a time — spaced out, so
+   neither the decode queue nor memory spikes while the temple is still moving.
+   ============================================================ */
+let _warmed = false;
+function warmContent(){
+  if(_warmed) return;                           // may be called from either trigger
+  _warmed = true;
+  document.body.classList.add('warm');          // sections lay out for real, once
+  const imgs = [].slice.call(document.querySelectorAll('.content img, .foot img'));
+  let i = 0;
+  (function next(){
+    const img = imgs[i++];
+    if(!img) return;
+    const go = ()=> setTimeout(next, 30);       // breathe between decodes
+    // decode() resolves when the bitmap is ready to paint without blocking a frame.
+    // A rejection just means it isn't decodable yet — carry on either way.
+    if(img.decode) img.decode().then(go, go);
+    else go();
+  })();
+}
+// Two triggers, whichever comes first. The timer takes the quietest slot going; the
+// first scroll is the surer signal, since a guest who has started moving is heading
+// for the content and may well outrun a timer. Safari has never shipped
+// requestIdleCallback, so the timeout path is the one that runs on iPhones.
+(function scheduleWarm(){
+  const run = ()=>{
+    if(window.requestIdleCallback) requestIdleCallback(warmContent, {timeout:1200});
+    else setTimeout(warmContent, 400);
+  };
+  if(document.readyState === 'complete') setTimeout(run, 250);
+  else window.addEventListener('load', ()=>setTimeout(run, 250), {once:true});
+  window.addEventListener('scroll', warmContent, {once:true, passive:true});
+})();
+
+/* ============================================================
+   WEDDING MUSIC  —  on by default
+   The intent is always "playing"; only the guest pressing the button turns it off.
+   Two things fight this and are handled here:
+     1. Browsers refuse audio with sound until the visitor interacts. So we try
+        immediately, and if refused we keep retrying on EVERY gesture until sound is
+        confirmed flowing (the 'playing' event), rather than trusting one attempt.
+     2. On iOS the ringer/silent switch mutes <audio> element playback outright, and
+        element volume is read-only. Routing through Web Audio avoids both, so on the
+        first gesture we move playback into an AudioContext when one is available.
+   ============================================================ */
+function initWeddingMusic(){
+  const btn = $('musicBtn'), audio = $('bgm'), cue = $('musicCue');
+  if(!btn || !audio) return;
+
+  if(!audio.src) audio.load();
+
+  const LEVEL = 0.55;          // background level: present, never overbearing
+  let wantOn = true;           // the guest's intent — starts ON
+  let confirmed = false;       // has sound genuinely started at least once
+  let ramp = null;
+
+  // iOS reports volume as read-only; probe once so fades aren't attempted into a void.
+  audio.volume = 0;
+  const canFade = (audio.volume === 0);
+  if(!canFade) audio.volume = 1;
+
+  /* ---- Web Audio routing (created inside a gesture, never before) ----
+     A MediaElementSource is one-way: once the element is attached to a graph its sound
+     can't return to the speakers directly. So we only attach after confirming the
+     context is actually running, and tear down cleanly if it isn't. */
+  let ctx = null, gain = null, routeTries = 0;
+  function route(){
+    if(gain || routeTries >= 2) return;           // iOS caps live contexts; don't spam
+    const AC = window.AudioContext || window.webkitAudioContext;
+    if(!AC) return;
+    routeTries++;
+    let c;
+    try{ c = new AC(); }catch(err){ return; }
+    const bail = ()=>{ try{ c.close && c.close(); }catch(err){} };
+    Promise.resolve(c.resume ? c.resume() : null).then(()=>{
+      if(c.state !== 'running'){ bail(); return; }
+      try{
+        // The element's own volume stays in the signal path and MULTIPLIES the graph,
+        // so it must be handed over, not left where the element-level fade had it.
+        // Anywhere volume is writable (Android, desktop) it was sitting at ~0, which
+        // silenced the graph outright. Carry the level across, then open the element up.
+        const handover = audio.paused ? 0 : (canFade ? audio.volume : LEVEL);
+        const src = c.createMediaElementSource(audio);
+        const g = c.createGain();
+        g.gain.value = handover;
+        src.connect(g); g.connect(c.destination);
+        ctx = c; gain = g;
+        if(canFade) audio.volume = 1;      // element is now a pass-through
+      }catch(err){ bail(); }
+    }).catch(bail);
+  }
+
+  const clampV = v => Math.min(1, Math.max(0, v));
+  function applyVol(v){
+    if(gain){
+      gain.gain.value = clampV(v);
+      if(canFade && audio.volume !== 1) audio.volume = 1;   // never stack two faders
+    }
+    else if(canFade) audio.volume = clampV(v);
+  }
+  function currentVol(){ return gain ? gain.gain.value : (canFade ? audio.volume : 1); }
+
+  function fadeTo(target, ms, after){
+    clearInterval(ramp); ramp = null;
+    if(!gain && !canFade){ if(after) after(); return; }   // no volume control at all
+    const from = currentVol(), steps = Math.max(1, Math.round(ms/40));
+    let i = 0;
+    ramp = setInterval(()=>{
+      i++;
+      applyVol(from + (target-from)*(i/steps));
+      if(i >= steps){ clearInterval(ramp); ramp = null; if(after) after(); }
+    }, 40);
+  }
+
+  function paint(on){
+    btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+    btn.setAttribute('aria-label', on ? 'Turn wedding music off' : 'Turn wedding music on');
+  }
+  function dismissCue(){ btn.classList.remove('hint'); if(cue) cue.classList.add('gone'); }
+
+  audio.addEventListener('play',  ()=>paint(true));
+  audio.addEventListener('pause', ()=>paint(false));
+  // 'playing' can fire on a stream that isn't actually advancing, and trusting it was
+  // enough to stand the retry listeners down for good. Confirm the clock has moved first.
+  audio.addEventListener('playing', ()=>{
+    paint(true);
+    const mark = audio.currentTime;
+    setTimeout(()=>{
+      if(audio.paused || audio.currentTime <= mark) return;   // stay armed, try again
+      confirmed = true; dismissCue(); detach();
+    }, 400);
+  });
+
+  function start(fromGesture){
+    wantOn = true;
+    if(fromGesture) route();       // must happen inside the gesture to be allowed
+    applyVol(0);
+    const req = audio.play();
+    // Refusal before any interaction is expected: keep the intent, drop only the icon,
+    // and let the next gesture try again.
+    if(req && req.catch) req.catch(()=>paint(false));
+    fadeTo(LEVEL, 900);
+  }
+  function stop(){
+    wantOn = false; paint(false);
+    fadeTo(0, 350, ()=>audio.pause());
+  }
+
+  btn.addEventListener('click', ()=>{
+    dismissCue();
+    wantOn ? stop() : start(true);
+  });
+
+  // Scrolling starts the music. On a phone a scroll begins with touchstart, which
+  // browsers accept as interaction, so this is what actually fires in practice; scroll
+  // and wheel are in the list too so a desktop wheel gets a go wherever it's permitted.
+  // Every one of these retries until sound is confirmed — a refused attempt costs
+  // nothing, and the throttle keeps a long scroll from calling play() on every frame.
+  let lastTry = 0;
+  function gesture(e){
+    if(!wantOn || confirmed) return;                      // muted, or already playing
+    if(e && e.target && btn.contains && btn.contains(e.target)) return;  // button's own job
+    const now = Date.now();
+    if(now - lastTry < 350) return;
+    lastTry = now;
+    start(true);   // the cue stays put until sound is confirmed — a scroll won't earn it
+  }
+  // Chrome counts a tap or click as interaction and explicitly does not count a scroll,
+  // so touchend/pointerup are the ones that carry a real chance on a phone.
+  const GESTURES = ['scroll','wheel','touchstart','touchend','pointerdown','pointerup',
+                    'mouseup','click','keydown'];
+  const GOPTS = {capture:true, passive:true};
+  function detach(){ GESTURES.forEach(t => window.removeEventListener(t, gesture, GOPTS)); }
+  GESTURES.forEach(t => window.addEventListener(t, gesture, GOPTS));
+
+  // Try straight away: where a browser permits it, the music simply starts.
+  start(false);
+
+  if(cue) setTimeout(dismissCue, 9000);
+
+  // don't play to an empty room when the guest switches tabs or locks the phone
+  let resumeOnReturn = false;
+  document.addEventListener('visibilitychange', ()=>{
+    if(document.hidden){
+      if(wantOn && !audio.paused){ resumeOnReturn = true; audio.pause(); }
+    }else if(resumeOnReturn){
+      resumeOnReturn = false;
+      if(wantOn){
+        if(ctx && ctx.resume) ctx.resume();
+        const q = audio.play(); if(q && q.catch) q.catch(()=>{});
+      }
+    }
+  });
+}
+// audio src is external; wait for the parser so the element exists
+if(document.readyState === 'loading')
+  document.addEventListener('DOMContentLoaded', initWeddingMusic, {once:true});
+else initWeddingMusic();
+</script>
+
+  <audio id="bgm" loop="" autoplay="" preload="none" src="assets/bgm.mp3"></audio>
+
+
+
+<script>
+/* Local music swap: put your own track at assets/bgm.mp3. If absent, the bundled
+   reference track is used when available. */
+(function(){
+  const audio=document.querySelector('audio');
+  if(!audio) return;
+  audio.addEventListener('error',function(){
+    if(!this.dataset.fallback){
+      this.dataset.fallback='1';
+      this.src='media/bgm.mp3';
+      this.load();
+    }
+  });
+})();
+</script>
+</body></html>
