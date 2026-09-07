@@ -1457,7 +1457,7 @@ if(reduced){
   // each petal is its own infinitely animating layer; phones get a lighter fall
   const petals = window.matchMedia('(max-width:680px)').matches ? 2 : 9;
   for(let i=0;i<petals;i++){
-    const s=document.createElement('span'); s.className='petal';
+    const s=document.createElement('span'); s.className='petal';s.textContent='🌸';
     s.style.left=(6+Math.random()*88)+'%';
     const dur=(7+Math.random()*7), delay=(-Math.random()*10);
     const drift=(Math.random()*40-20);
