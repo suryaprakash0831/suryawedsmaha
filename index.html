@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-NDLQQR/pCUs5DwABsWkdkA0lOZznDKSLqW6mlfeLQ0s='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-jsT3vM+LaCts/wYQZhYznsTVZRJV1EHYeCLVF4G9Tj4='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Mahalakshmi A &amp; Surya Prakash S — Shubha Vivaha</title>
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
@@ -1691,7 +1691,7 @@ function initWeddingMusic(){
 
   btn.addEventListener('click', ()=>{
     dismissCue();
-    wantOn ? stop() : start(true);
+    audio.paused ? start(true) : stop();
   });
 
   // Scrolling starts the music. On a phone a scroll begins with touchstart, which
