@@ -1,6 +1,8 @@
 <!DOCTYPE html><html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-NDLQQR/pCUs5DwABsWkdkA0lOZznDKSLqW6mlfeLQ0s='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self' https://fonts.gstatic.com; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Mahalakshmi A &amp; Surya Prakash S — Shubha Vivaha</title>
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
 <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
@@ -9,36 +11,39 @@
 
 <!-- ===================== METADATA =====================
      og:image must be an absolute URL — WhatsApp, iMessage, Facebook and X
-     cannot read a data: URI, so og.jpg has to sit next to this file on the
-     server. Bump ?v=1 to ?v=2 if you ever change the card; the crawlers
+     cannot read a data: URI, so share-card.jpg is served as a real file.
+     Bump ?v=2 to ?v=3 if you ever change the card; the crawlers
      cache previews hard and the query string is what forces a re-fetch.
      ==================================================== -->
-<meta name="description" content="Shubha Vivaha — Mahalakshmi A weds Surya Prakash S on Sunday, 11 November 2026, muhurtham at 9:50 AM, Maha Ganapathi Temple.">
+<meta name="description" content="With the blessings of our families, we respectfully invite you to the reception of Mahalakshmi and Surya Prakash on 10 November 2026 at Rahul Convention Hall, and their wedding on 11 November 2026 at Sri Maha Ganapathi Temple.">
 <meta name="author" content="Mahalakshmi A &amp; Surya Prakash S">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex, follow, max-image-preview:large">
+<link rel="canonical" href="https://suryawedsmahalaskhmi.online/">
 
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Mahalakshmi A weds Surya Prakash S">
 <meta property="og:locale" content="en_IN">
 <meta property="og:url" content="https://suryawedsmahalaskhmi.online/">
-<meta property="og:title" content="Mahalakshmi A weds Surya Prakash S">
-<meta property="og:description" content="November 11, 2026 · Muhurtham at Maha Ganapathi Temple. Together with our families, we invite you to share in our joy.">
+<meta property="og:title" content="With Warm Hearts, We Invite You — Mahalakshmi &amp; Surya Prakash">
+<meta property="og:description" content="Please join us for our Reception on 10 November 2026 at Rahul Convention Hall and our Wedding on 11 November 2026 at Sri Maha Ganapathi Temple. Your presence and blessings will make our celebration complete.">
+<meta property="og:image" content="https://suryawedsmahalaskhmi.online/images/share-card.jpg?v=2">
+<meta property="og:image:secure_url" content="https://suryawedsmahalaskhmi.online/images/share-card.jpg?v=2">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Sri Ganesha above the names Mahalakshmi A weds Surya Prakash S, with the wedding date of 11 November 2026.">
+<meta property="og:image:alt" content="Wedding invitation for Mahalakshmi and Surya Prakash, with reception and wedding dates and venues.">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Mahalakshmi A Aweds Surya Prakash S">
-<meta name="twitter:description" content="November 11, 2026 · Muhurtham at Maha Ganapathi Temple.">
-<meta name="twitter:image:alt" content="Sri Ganesha above the names Mahalakshmi A weds Surya Prakash.">
+<meta name="twitter:title" content="With Warm Hearts, We Invite You — Mahalakshmi &amp; Surya Prakash">
+<meta name="twitter:description" content="Reception · 10 November 2026 · Rahul Convention Hall. Wedding · 11 November 2026 · Sri Maha Ganapathi Temple.">
+<meta name="twitter:image" content="https://suryawedsmahalaskhmi.online/images/share-card.jpg?v=2">
+<meta name="twitter:image:alt" content="Wedding invitation for Mahalakshmi and Surya Prakash, with reception and wedding dates and venues.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&amp;family=EB+Garamond:ital,wght@0,400;0,500;1,400&amp;family=Cinzel:wght@400;500;600&amp;family=Tiro+Devanagari+Sanskrit&amp;display=swap" rel="stylesheet">
 <link rel="preload" as="image" type="image/webp" href="images/ganesha.webp">
 <link rel="preload" as="image" type="image/webp" href="images/gopuram.webp" media="(min-width:681px)">
 <link rel="preload" as="image" type="image/webp" href="images/gopuram-mobile.webp" media="(max-width:680px)">
-<link rel="preload" as="image" type="image/webp" href="images/kalash.webp">
 <style>
   :root{
     --maroon:#5E0F20; --maroon-deep:#3A0712; --maroon-soft:#78192F;
@@ -109,6 +114,9 @@
   }
   img{display:block;user-select:none;-webkit-user-drag:none}
   a{color:inherit}
+  .sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+  .skip-link{position:fixed;left:12px;top:12px;z-index:200;transform:translateY(-160%);padding:.65rem 1rem;border-radius:6px;background:var(--cream-2);color:var(--maroon);border:1px solid var(--gold);font-family:var(--caps);font-size:12px;text-decoration:none;transition:transform .2s ease}
+  .skip-link:focus{transform:translateY(0);outline:2px solid var(--maroon);outline-offset:2px}
 
   /* ================= LOADING SHELL =================
      This is real content, not a blank blocker: it covers the cinematic stage only
@@ -666,9 +674,12 @@
 </head>
 <body class="loading">
 
+  <a class="skip-link" href="#content">Skip to invitation details</a>
+  <h1 class="sr-only">Mahalakshmi A and Surya Prakash S — Reception and Wedding Invitation</h1>
+
   <div class="load-shell" id="loadShell" role="status" aria-live="polite" hidden="">
     <div>
-      <div class="load-shell__mark"><img src="images/ganesha.webp" alt=""></div>
+      <div class="load-shell__mark"><img width="247" height="278" src="images/ganesha.webp" alt=""></div>
       <div class="load-shell__title">Mahalakshmi A &amp; Surya Prakash S</div>
       <div class="load-shell__sub">Shubha Vivaha</div>
       <p class="load-shell__msg" id="loadShellMsg">Opening the invitation...</p>
@@ -677,11 +688,11 @@
   </div>
 
   <!-- faint temple watermark behind all content -->
-  <div class="watermark"><img src="images/gopuram.webp" aria-hidden="true" alt=""></div>
+  <div class="watermark"><img aria-hidden="true" alt=""></div>
   <!-- viewport-fixed temple silhouette used ONLY during the reveal-end bloom;
        matches .watermark img exactly so the transition into the content section
        (which uses .watermark) is visually continuous -->
-  <div class="bloom-wm" id="bloomWm" aria-hidden="true"><img alt="" src="images/gopuram.webp"></div>
+  <div class="bloom-wm" id="bloomWm" aria-hidden="true"><img alt=""></div>
 
   <!-- ===================== CINEMATIC REVEAL ===================== -->
   <section class="reveal-wrap" id="reveal">
@@ -693,7 +704,7 @@
       <div class="top-scrim" id="topscrim"></div>
       <!-- opening title -->
       <div class="opening" id="opening">
-        <div class="ganesha" aria-label="Sri Ganesha"><img src="images/ganesha.webp" alt="Sri Ganesha"></div>
+        <div class="ganesha" aria-label="Sri Ganesha"><img width="247" height="278" src="images/ganesha.webp" alt="Sri Ganesha"></div>
         <div class="invocation" id="invocation"><span class="inv-part" id="inv-1">|| Shri Veeramahashakthi Amman Thunai ||</span><span class="inv-part" id="inv-2">|| Shri Gurubhyo Namaha ||</span></div>
         <div class="eyebrow" id="eyebrow">Shubha Vivaha</div>
         <div class="hosts" id="hosts">Together with our families</div>
@@ -701,8 +712,8 @@
 
       <!-- ambient decor -->
       <div class="ambient" id="ambient">
-        <div class="lamp l"><img src="images/lamp.webp" alt=""></div>
-        <div class="lamp r"><img src="images/lamp.webp" alt=""></div>
+        <div class="lamp l"><img width="340" height="707" src="images/lamp.webp" alt=""></div>
+        <div class="lamp r"><img width="340" height="707" src="images/lamp.webp" alt=""></div>
       </div>
 
       <!-- gopuram camera -->
@@ -714,7 +725,7 @@
              still crisp at 100vw on a retina screen. -->
         <picture>
           <source media="(max-width:680px)" type="image/webp" srcset="images/gopuram-mobile.webp">
-          <img class="gopuram" decoding="async" src="images/gopuram.webp" alt="Temple gopuram">
+          <img class="gopuram" decoding="async" width="2800" height="4848" src="images/gopuram.webp" alt="Temple gopuram">
         </picture>
       </div>
 
@@ -724,16 +735,16 @@
       <div class="doorframe" id="doorframe">
         <div class="door-scene" id="doorscene">
           <div class="glow" id="glow"></div>
-          <div class="door-wm" id="doorwm" aria-hidden="true"><img alt="" src="images/gopuram.webp"></div>
+          <div class="door-wm" id="doorwm" aria-hidden="true"><img alt=""></div>
           <div class="names" id="names">
             <div class="who" id="bride">Mahalakshmi A</div>
             <div class="amp" id="join">weds</div>
             <div class="who" id="groom">Surya Prakash S</div>
-            <div class="whenat" id="whenat">11 November 2026</div>
+            <div class="whenat" id="whenat">10 &amp; 11 November 2026</div>
           </div>
-          <div class="leaf l" id="doorL"><img src="images/door-leaf-left.webp" alt=""></div>
-          <div class="leaf r" id="doorR"><img src="images/door-leaf-right.webp" alt=""></div>
-          <img class="frame-img" src="images/frame.webp" alt="Temple doorway">
+          <div class="leaf l" id="doorL"><img width="292" height="1027" src="images/door-leaf-left.webp" alt=""></div>
+          <div class="leaf r" id="doorR"><img width="293" height="1027" src="images/door-leaf-right.webp" alt=""></div>
+          <img class="frame-img" width="660" height="1008" src="images/frame.webp" alt="Temple doorway">
         </div>
       </div>
 
@@ -756,13 +767,13 @@
 
     <!-- invocation -->
     <section class="section invoke">
-      <span class="entry-leaf l"><img decoding="async" src="images/entry-leaf.webp" alt=""></span>
-      <span class="entry-leaf r"><img decoding="async" src="images/entry-leaf.webp" alt=""></span>
-      <div class="kalash"><img decoding="async" width="320" height="447" src="images/kalash.webp" alt="Kalash"></div>
+      <span class="entry-leaf l"><img decoding="async" loading="lazy" width="340" height="1046" src="images/entry-leaf.webp" alt=""></span>
+      <span class="entry-leaf r"><img decoding="async" loading="lazy" width="340" height="1046" src="images/entry-leaf.webp" alt=""></span>
+      <div class="kalash"><img decoding="async" loading="lazy" width="320" height="447" src="images/kalash.webp" alt="Kalash"></div>
       <p class="lede" id="invoke-en">We seek the blessings of Lord Ganesha for a beginning free of obstacles, and invite you to share in our joy.</p>
     </section>
 
-    <div class="divider"><span class="rule"></span><span class="mark"><img decoding="async" loading="lazy" src="images/divider-mark-1.webp" alt=""></span><span class="rule r"></span></div>
+    <div class="divider"><span class="rule"></span><span class="mark"><img decoding="async" loading="lazy" width="620" height="617" src="images/divider-mark-1.webp" alt=""></span><span class="rule r"></span></div>
 
     <!-- invitation: the couple, each under their parents' names -->
     <section class="section">
@@ -770,13 +781,13 @@
       <p class="lede invite-intro" id="invite-intro">Our families request the honour of your presence as we exchange vows and begin our journey together.</p>
 
       <div class="invite-couple" id="ic-bride">Mahalakshmi A</div>
-      <div class="invite-par" id="ic-bp">Daughter of Smt. Shanthi A &amp; Armugham R</div>
+      <div class="invite-par" id="ic-bp">Daughter of Armugam R &amp; Shanthi A</div>
       <div class="invite-grand" id="ic-bgp" style="display: none;"></div>
 
       <div class="invite-amp">weds</div>
 
       <div class="invite-couple" id="ic-groom">Surya Prakash S</div>
-      <div class="invite-par" id="ic-gp">Son of Smt. Amudha S &amp; Sri Sugendra C</div>
+      <div class="invite-par" id="ic-gp">Son of Sugendra C &amp; Amudha S</div>
       <div class="invite-grand" id="ic-ggp" style="display: none;"></div>
     </section>
 
@@ -786,58 +797,40 @@
       <h2 class="h-serif">Join us for every moment</h2>
       <div class="events" id="events">
   <article class="card">
-    <img class="cmark" src="images/divider-mark-1.webp" alt="">
-    <h3>Sangeet</h3>
-    <div class="sub">An evening of music &amp; dance</div>
-    <div class="row"><span class="lbl">◷</span><span>Tuesday, 10 November 2026</span></div>
-    <div class="row"><span class="lbl">✧</span><span>6:00 PM onwards</span></div>
-    <div class="row"><span class="lbl">⌖</span><span>Maha Ganapathi Temple</span></div>
-    <a class="map" href="https://share.google/9iauPvhvFWOxu85Uo" target="_blank" rel="noopener">See the route</a>
-  </article>
-  <article class="card">
-    <img class="cmark" src="images/divider-mark-1.webp" alt="">
-    <h3>Wedding</h3>
-    <div class="sub">Muhurtham — the sacred ceremony</div>
-    <div class="row"><span class="lbl">◷</span><span>Sunday, 11 November 2026</span></div>
-    <div class="row"><span class="lbl">✧</span><span>Muhurtham at 9:50 AM</span></div>
-    <div class="row"><span class="lbl">⌖</span><span>Maha Ganapathi Temple</span></div>
-    <a class="map" href="https://share.google/9iauPvhvFWOxu85Uo" target="_blank" rel="noopener">See the route</a>
-  </article>
-  <article class="card">
-    <img class="cmark" src="images/divider-mark-1.webp" alt="">
-    <h3>Vadhu Grihapravesham</h3>
-    <div class="sub">Welcoming the bride home</div>
-    <div class="row"><span class="lbl">◷</span><span>Thursday, 12 November 2026</span></div>
-    
-    <div class="row"><span class="lbl">⌖</span><span>Maha Ganapathi Temple</span></div>
-    <a class="map" href="https://share.google/oiEFno8nz21VGIZVn" target="_blank" rel="noopener">See the route</a>
-  </article>
-  <article class="card">
-    <img class="cmark" src="images/divider-mark-1.webp" alt="">
+    <img class="cmark" loading="lazy" width="620" height="617" src="images/divider-mark-1.webp" alt="">
     <h3>Reception</h3>
-    <div class="sub">Dinner &amp; celebration</div>
-    <div class="row"><span class="lbl">◷</span><span>Tuesday, 10 November 2026</span></div>
-    <div class="row"><span class="lbl">✧</span><span>6:30 PM onwards</span></div>
-    <div class="row"><span class="lbl">⌖</span><span>Maha Ganapathi Temple</span></div>
-    <a class="map" href="https://share.google/do2z6CfOkS61zpiri" target="_blank" rel="noopener">See the route</a>
+    <div class="sub">An evening of celebration &amp; togetherness</div>
+    <div class="row"><span class="lbl" aria-hidden="true">◷</span><time datetime="2026-11-10">Tuesday, 10 November 2026</time></div>
+    <div class="row"><span class="lbl" aria-hidden="true">✧</span><time datetime="2026-11-10T19:00:00+05:30">7:00 PM onwards</time></div>
+    <div class="row"><span class="lbl" aria-hidden="true">⌖</span><span>Rahul Convention Hall</span></div>
+    <a class="map" href="https://maps.app.goo.gl/W1cBnHynDoXbvJnaA" target="_blank" rel="noopener noreferrer" aria-label="See the route to Rahul Convention Hall">See the route</a>
+  </article>
+  <article class="card">
+    <img class="cmark" loading="lazy" width="620" height="617" src="images/divider-mark-1.webp" alt="">
+    <h3>Muhurtham</h3>
+    <div class="sub">The sacred Shubha Vivaha ceremony</div>
+    <div class="row"><span class="lbl" aria-hidden="true">◷</span><time datetime="2026-11-11">Wednesday, 11 November 2026</time></div>
+    <div class="row"><span class="lbl" aria-hidden="true">✧</span><time datetime="2026-11-11T09:21:00+05:30">9:21 AM to 9:51 AM</time></div>
+    <div class="row"><span class="lbl" aria-hidden="true">⌖</span><span>Sri Maha Ganapathi Temple</span></div>
+    <a class="map" href="https://maps.app.goo.gl/2WDRBSgQHcHT2cERA" target="_blank" rel="noopener noreferrer" aria-label="See the route to Sri Maha Ganapathi Temple">See the route</a>
   </article></div>
     </section>
 
-    <div class="divider"><span class="rule"></span><span class="mark"><img decoding="async" loading="lazy" src="images/divider-mark-2.webp" alt=""></span><span class="rule r"></span></div>
+    <div class="divider"><span class="rule"></span><span class="mark"><img decoding="async" loading="lazy" width="460" height="529" src="images/divider-mark-2.webp" alt=""></span><span class="rule r"></span></div>
 
     <!-- countdown -->
     <section class="section">
       <div class="kicker">The muhurtham approaches</div>
       <h2 class="h-serif" id="cd-title">Counting down to the muhurtham</h2>
       <div class="count-wrap">
-        <div class="cd-diya"><img decoding="async" src="images/diya.webp" alt=""></div>
+        <div class="cd-diya"><img decoding="async" loading="lazy" width="300" height="302" src="images/diya.webp" alt=""></div>
         <div class="count" id="count">
           <div class="u"><div class="n" data-k="d">05</div><div class="l">Days</div></div>
           <div class="u"><div class="n" data-k="h">17</div><div class="l">Hours</div></div>
           <div class="u"><div class="n" data-k="m">16</div><div class="l">Min</div></div>
           <div class="u"><div class="n" data-k="s">21</div><div class="l">Sec</div></div>
         </div>
-        <div class="cd-diya flip"><img decoding="async" src="images/diya.webp" alt=""></div>
+        <div class="cd-diya flip"><img decoding="async" loading="lazy" width="300" height="302" src="images/diya.webp" alt=""></div>
       </div>
     </section>
 
@@ -846,7 +839,7 @@
       <div class="kicker">Meet the couple</div>
       <h2 class="h-serif">The bride &amp; groom</h2>
       <figure class="portrait">
-        <img id="couplePortrait" decoding="async" src="assets/couple-portrait.jpg" alt="Mahalakshmi A and Surya Prakash S">
+        <img id="couplePortrait" decoding="async" loading="lazy" width="1024" height="1536" src="images/portrait.webp" alt="Mahalakshmi A and Surya Prakash S">
       </figure>
       <div class="hashtag" id="hashtag">#SuryaWedsMaha</div>
       <div class="hashtag alt" id="hashtag2">#MahaSurya</div>
@@ -854,7 +847,7 @@
   </main>
 
   <footer class="foot">
-    <div class="lamp-f"><img decoding="async" src="images/lamp.webp" alt=""></div>
+    <div class="lamp-f"><img decoding="async" loading="lazy" width="340" height="707" src="images/lamp.webp" alt=""></div>
     <div class="om3">ॐ</div>
     <p class="blessing" id="foot-bless">May this sacred union be blessed with love, laughter, and a lifetime of togetherness.</p>
     <div class="credit" id="foot-names">Mahalakshmi A &amp; Surya Prakash S · 2026</div>
@@ -900,18 +893,20 @@ const CONFIG = {
 
   events: [
     { name:"Reception", sub:"An evening of celebration & togetherness",
-      date:"Tuesday, 10 November 2026", time:"7:00 PM onwards",
+      date:"Tuesday, 10 November 2026", dateISO:"2026-11-10",
+      time:"7:00 PM onwards", timeISO:"2026-11-10T19:00:00+05:30",
       venue:"Rahul Convention Hall", map:"https://maps.app.goo.gl/W1cBnHynDoXbvJnaA" },
     { name:"Muhurtham", sub:"The sacred Shubha Vivaha ceremony",
-      date:"Wednesday, 11 November 2026", time:"9:21 AM to 9:51 AM ",
+      date:"Wednesday, 11 November 2026", dateISO:"2026-11-11",
+      time:"9:21 AM to 9:51 AM", timeISO:"2026-11-11T09:21:00+05:30",
       venue:"Sri Maha Ganapathi Temple", map:"https://maps.app.goo.gl/2WDRBSgQHcHT2cERA" }
   ],
 
   // Update the time if you know the exact muhurtham.
   muhurtham: "2026-11-11T09:21:00+05:30",
   countdownTitle: "Counting down to the muhurtham",
-
-  
+  hashtag: "#SuryaWedsMaha",
+  hashtag2: "#MahaSurya",
 
   invokeEnglish: "With the divine grace of Lord Muruga, we seek His blessings to guide us on this sacred journey and humbly invite you to join us as we begin a beautiful new chapter of love and togetherness.",
   footBless: "May the divine blessings of Lord Muruga forever shine upon our union, filling our lives with enduring love, joyful laughter, harmony, and a lifetime of cherished togetherness."
@@ -1036,27 +1031,72 @@ const rsvpEl = $('rsvp');            // absent now that the RSVP section is gone
 if(rsvpEl) rsvpEl.href = CONFIG.whatsapp;
 document.title = CONFIG.bride+' & '+CONFIG.groom+' — Shubha Vivaha';
 
-/* ---------- couple portrait ---------- */
-(function(){
-  const portrait = document.getElementById('couplePortrait');
-  if(!portrait) return;
-  portrait.addEventListener('error', function(){
-    this.src = 'images/portrait.webp';
-  }, {once:true});
-})();
+/* ---------- event cards (safe DOM construction; no HTML injection) ---------- */
+(function renderEvents(){
+  const container = $('events');
+  if(!container || !Array.isArray(CONFIG.events)) return;
 
-/* ---------- event cards ---------- */
-const rangoli="images/divider-mark-1.webp?v=1";
-$('events').innerHTML = CONFIG.events.map(e=>`
-  <article class="card">
-    <img class="cmark" src="${rangoli}" alt="">
-    <h3>${e.name}</h3>
-    ${e.sub?`<div class="sub">${e.sub}</div>`:''}
-    <div class="row"><span class="lbl">◷</span><span>${e.date}</span></div>
-    ${e.time?`<div class="row"><span class="lbl">✧</span><span>${e.time}</span></div>`:''}
-    <div class="row"><span class="lbl">⌖</span><span>${e.venue}</span></div>
-    ${e.map?`<a class="map" href="${e.map}" target="_blank" rel="noopener">See the route</a>`:''}
-  </article>`).join('');
+  function addRow(card, symbol, value, datetime){
+    if(!value) return;
+    const row = document.createElement('div');
+    row.className = 'row';
+    const label = document.createElement('span');
+    label.className = 'lbl';
+    label.setAttribute('aria-hidden','true');
+    label.textContent = symbol;
+    const detail = datetime ? document.createElement('time') : document.createElement('span');
+    if(datetime) detail.dateTime = datetime;
+    detail.textContent = value;
+    row.append(label, detail);
+    card.appendChild(row);
+  }
+
+  const fragment = document.createDocumentFragment();
+  CONFIG.events.forEach(event=>{
+    const card = document.createElement('article');
+    card.className = 'card';
+
+    const mark = document.createElement('img');
+    mark.className = 'cmark';
+    mark.src = 'images/divider-mark-1.webp';
+    mark.alt = '';
+    mark.loading = 'lazy';
+    mark.width = 620;
+    mark.height = 617;
+    card.appendChild(mark);
+
+    const heading = document.createElement('h3');
+    heading.textContent = event.name || '';
+    card.appendChild(heading);
+    if(event.sub){
+      const sub = document.createElement('div');
+      sub.className = 'sub';
+      sub.textContent = event.sub;
+      card.appendChild(sub);
+    }
+    addRow(card, '◷', event.date, event.dateISO);
+    addRow(card, '✧', event.time, event.timeISO);
+    addRow(card, '⌖', event.venue);
+
+    if(event.map){
+      try{
+        const url = new URL(event.map, window.location.href);
+        if(url.protocol === 'https:'){
+          const route = document.createElement('a');
+          route.className = 'map';
+          route.href = url.href;
+          route.target = '_blank';
+          route.rel = 'noopener noreferrer';
+          route.textContent = 'See the route';
+          route.setAttribute('aria-label','See the route to '+event.venue);
+          card.appendChild(route);
+        }
+      }catch(error){ /* Invalid links are intentionally omitted. */ }
+    }
+    fragment.appendChild(card);
+  });
+  container.replaceChildren(fragment);
+})();
 
 /* ---------- countdown ---------- */
 (function(){
@@ -1385,6 +1425,7 @@ if(reduced){
   // Smooth the scroll-linked motion: ease the rendered progress toward the
   // real scroll position every frame, so discrete wheel steps glide instead of jumping.
   let targetP=0, curP=0, raf=null, _active=true;
+  let _lastTargetP=-1, _stillFrames=0;
   // The wrapper height only changes on resize, so it's cached rather than re-read on
   // every frame; _stageH is already maintained by the geometry pass above. That leaves
   // measure() with a single layout read.
@@ -1422,6 +1463,9 @@ if(reduced){
     // dribble of events kept the target fresh. A frame is a frame whether or not an
     // event came with it, so the position is now taken from layout on each one.
     measure();
+    if(Math.abs(targetP-_lastTargetP) < 0.00001) _stillFrames++;
+    else _stillFrames=0;
+    _lastTargetP=targetP;
     // A fling opens a far bigger gap than a wheel step does, and easing a large gap over
     // the same 250ms reads as the temple lagging the finger — the exact complaint that
     // only ever showed up on fast scrolling. Big gaps close in ~90ms, small ones keep the
@@ -1433,15 +1477,21 @@ if(reduced){
     const settled = Math.abs(targetP-curP) < 0.0005;
     if(settled) curP = targetP;
     render(curP);
-    // Keep going while the reveal is anywhere near the viewport even once settled: the
-    // loop is now the only thing reading scroll position, so parking it early would
-    // bring the stale-target problem straight back. put() skips unchanged writes, so a
-    // frame where nothing moved costs one layout read and a handful of comparisons.
-    if(_active || !settled) raf = requestAnimationFrame(tick);
+    // Keep sampling through momentum scrolling, then park after the page has been still
+    // for a short window. This preserves the iOS fling fix without forcing a layout read
+    // at 60 FPS for as long as a guest pauses anywhere inside the reveal.
+    if((_active && _stillFrames < 12) || !settled) raf = requestAnimationFrame(tick);
     else { raf = null; _prevT = 0; }
   }
-  function kick(){ if(raf===null){ measure(); raf=requestAnimationFrame(tick); } }
+  function kick(){
+    if(!_active) return;
+    _stillFrames=0;
+    if(raf===null){ measure(); raf=requestAnimationFrame(tick); }
+  }
   window.addEventListener('scroll', kick, {passive:true});
+  window.addEventListener('wheel', kick, {passive:true});
+  window.addEventListener('touchstart', kick, {passive:true});
+  window.addEventListener('touchmove', kick, {passive:true});
   window.addEventListener('resize', ()=>{ remeasureBox(); kick(); });
   // Once the guest is well past the reveal there is nothing left to drive, so the loop
   // parks rather than burning a frame callback for the rest of the page — and wakes the
@@ -1503,6 +1553,7 @@ function warmContent(){
   (function next(){
     const img = imgs[i++];
     if(!img) return;
+    if(img.loading === 'lazy') img.loading = 'eager';
     const go = ()=> setTimeout(next, 30);       // breathe between decodes
     // decode() resolves when the bitmap is ready to paint without blocking a frame.
     // A rejection just means it isn't decodable yet — carry on either way.
@@ -1684,29 +1735,11 @@ function initWeddingMusic(){
     }
   });
 }
-// audio src is external; wait for the parser so the element exists
+// The audio element follows this script in the document; wait until parsing completes.
 if(document.readyState === 'loading')
   document.addEventListener('DOMContentLoaded', initWeddingMusic, {once:true});
 else initWeddingMusic();
 </script>
 
-  <audio id="bgm" loop="" autoplay="" preload="none" src="assets/bgm.mp3"></audio>
-
-
-
-<script>
-/* Local music swap: put your own track at assets/bgm.mp3. If absent, the bundled
-   reference track is used when available. */
-(function(){
-  const audio=document.querySelector('audio');
-  if(!audio) return;
-  audio.addEventListener('error',function(){
-    if(!this.dataset.fallback){
-      this.dataset.fallback='1';
-      this.src='media/bgm.mp3';
-      this.load();
-    }
-  });
-})();
-</script>
+  <audio id="bgm" loop="" preload="none" src="media/bgm.mp3"></audio>
 </body></html>
