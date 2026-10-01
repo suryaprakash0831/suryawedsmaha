@@ -1,0 +1,4 @@
+.event-panel[hidden]{display:block!important}
+.event-tabs,.music-control,.menu-toggle,.footer-replay,[data-share],[data-copy],.photo-cue{display:none!important}
+.event-experience{display:block}
+.event-panel+.event-panel{border-top:1px solid #dabb7845}

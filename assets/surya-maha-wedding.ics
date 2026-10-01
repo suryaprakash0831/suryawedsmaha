@@ -1,0 +1,27 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Surya Maha//Wedding Invitation//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:surya-maha-reception-20261110@wedding
+DTSTAMP:20261001T023000Z
+DTSTART:20261110T133000Z
+SUMMARY:Mahalakshmi & Surya Prakash — Reception
+LOCATION:Rahul Convention Hall
+DESCRIPTION:Reception: Tuesday\, 10 November 2026\, 7 PM IST onwards. Dir
+ ections: https://maps.app.goo.gl/W1cBnHynDoXbvJnaA
+URL:https://maps.app.goo.gl/W1cBnHynDoXbvJnaA
+END:VEVENT
+BEGIN:VEVENT
+UID:surya-maha-muhurtham-20261111@wedding
+DTSTAMP:20261001T023000Z
+DTSTART:20261111T035100Z
+DTEND:20261111T042100Z
+SUMMARY:Mahalakshmi & Surya Prakash — Wedding Muhurtham
+LOCATION:Sri Maha Ganapathi Temple
+DESCRIPTION:Wednesday\, 11 November 2026\, 9:21 AM–9:51 AM IST. Directi
+ ons: https://maps.app.goo.gl/2WDRBSgQHcHT2cERA
+URL:https://maps.app.goo.gl/2WDRBSgQHcHT2cERA
+END:VEVENT
+END:VCALENDAR
