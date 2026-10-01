@@ -670,6 +670,35 @@
   body.reduced .section{content-visibility:visible; contain-intrinsic-size:none}
   /* asset loading timed out — hide the unloaded door and show content cleanly */
   body.asset-fallback .reveal-wrap{display:none}
+
+  /* Typography: readable text and consistent spacing in the original design. */
+  body{font-size:1.125rem; line-height:1.65}
+  .load-shell__title,.h-serif{font-weight:500; line-height:1.18}
+  .load-shell__sub{font-size:.8125rem; line-height:1.6; letter-spacing:.18em}
+  .load-shell__msg,.lede{font-size:clamp(1.125rem,2.4vw,1.375rem); font-weight:500; line-height:1.7}
+  .invocation{font-size:clamp(.875rem,2.1vw,1.125rem); line-height:1.55}
+  .eyebrow{font-size:clamp(.875rem,1.7vw,1rem); letter-spacing:.22em; padding-left:.22em; line-height:1.6}
+  .hosts{font-weight:500; line-height:1.4}
+  .scroll-hint{font-size:.8125rem; letter-spacing:.12em; line-height:1.5}
+  .music-cue{font-size:.8125rem; letter-spacing:.08em; line-height:1.5}
+  .skip-link{font-size:.875rem}
+  .names .bless{font-size:clamp(.875rem,1.9vh,1rem); line-height:1.45}
+  .names .who{line-height:1.16}
+  .names .whenat{font-size:clamp(.875rem,1.6vh,.9375rem); line-height:1.55; letter-spacing:.14em}
+  .kicker{font-size:.875rem; letter-spacing:.16em; padding-left:.16em; line-height:1.6}
+  .invite-couple{line-height:1.15; letter-spacing:.005em}
+  .invite-par{font-family:var(--body); font-size:clamp(1.125rem,2.4vw,1.375rem); line-height:1.6; letter-spacing:0}
+  .invite-grand{font-size:clamp(.9375rem,2vw,1.125rem); line-height:1.5}
+  .card .en{font-size:.8125rem; line-height:1.6; letter-spacing:.12em}
+  .card h3{line-height:1.2}
+  .card .sub{font-size:clamp(1.125rem,2vw,1.25rem); line-height:1.5}
+  .card .row{font-size:clamp(1.125rem,2.1vw,1.25rem); line-height:1.6; font-weight:500}
+  .card .map,.btn{font-size:.875rem; line-height:1.6; letter-spacing:.10em}
+  .count .n{line-height:1.15}
+  .count .l{font-size:.8125rem; line-height:1.55; letter-spacing:.10em}
+  .hashtag{line-height:1.5}
+  .foot .blessing{font-size:clamp(1.125rem,2.3vw,1.375rem); line-height:1.6}
+  .foot .credit{font-size:.8125rem; line-height:1.7; letter-spacing:.12em}
 </style>
 </head>
 <body class="loading">
